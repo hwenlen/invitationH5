@@ -1,0 +1,497 @@
+@import 'animate.scss';
+/*以上是动画设置*/
+html,body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Microsoft YaHei','Tahoma','Arial','Helvetica','sans-serif';
+}
+
+$anitime: 0.8s;
+
+.animated {
+    opacity: 0;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+
+#back {
+    width: 1.29rem;
+    position: absolute;
+    right: 0.02rem;
+    bottom: 0.95rem;
+    z-index: 30;
+    animation: zoomInfinite 1.6s linear infinite;
+    display: none;
+}
+#downImg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    display: none;
+}
+
+.bg-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    .loading-bg {
+        background: url(../images/bg/loading-bg.jpg) no-repeat center/cover;
+        display: block;
+    }
+    .bg1 {
+        background: url(../images/bg/bg1.jpg) no-repeat center/cover;
+    }
+    .bg2 {
+        background: url(../images/bg/bg2.jpg) no-repeat center/cover;
+    }
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.audio-btn {
+    position: absolute;
+    top: 0.4rem;
+    right: 0.4rem;
+    z-index: 100;
+    width: 0.6rem;
+    img {
+        display: none;
+    }
+}
+
+#bgMusic {
+    display: none;
+}
+
+.header {
+    position: absolute;
+    top: 0.4rem;
+    left: 0.4rem;
+    img {
+        width: 5.22rem;
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0.4rem;
+    right: 0.4rem;
+    img {
+        width: 1.36rem;
+    }
+}
+
+.content {
+    height: 100%;
+}
+
+.page-conteiner {
+    height: 100%;
+}
+
+.swiper-slide {
+    padding-top: 0.9rem;
+    overflow: hidden;
+}
+
+.page-balloon {
+//    width: 1.37rem;
+    width: 3.8rem;
+    position: absolute;
+    top: 2.09rem;
+    right: 1.90rem;
+    opacity: 0;
+    animation: bgBalloonFly3 10s linear infinite;
+}
+
+.bg-balloon1 {
+    width: 0.73rem;
+    position: absolute;
+    top: 5.76rem;
+    right: 1.68rem;
+    opacity: 0.38;
+    animation: bgBalloonFly2 7s linear infinite;
+}
+
+.bg-balloon2 {
+    width: 1.29rem;
+    position: absolute;
+    top: 8.26rem;
+    left: 1.54rem;
+    animation: bgBalloonFly 8s linear infinite;
+}
+
+.landmark {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0.77rem;
+}
+
+.page-main {
+    position: relative;
+    z-index: 10;
+    opacity: 0;
+}
+
+.arrow {
+    width: 0.6rem;
+    position: absolute;
+    bottom: 0.6rem;
+    left: 50%;
+    margin-left: -0.3rem;
+    animation: arrow 1.2s linear infinite;
+}
+.loading-slide {
+    .balloon {
+        width: 3.8rem;
+        margin: 1.2rem auto 0;
+        animation: Twinkle 5s linear infinite;
+    }
+    .loading-title {
+        width: 6.47rem;
+        margin: 1.04rem auto 0;
+    }
+    .progress {
+        width: 6.4rem;
+        height: 0.36rem;
+        background: url(../images/progress/bg.png) no-repeat center/cover;
+        margin: 0.98rem auto 0;
+        overflow: hidden;
+        border-radius: 0.18rem;
+        position: relative;
+        .shade {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            mix-blend-mode: overlay;
+        }
+        .light2 {
+            position: absolute;
+            mix-blend-mode: overlay;
+            width: 1.66rem;
+            bottom: -0.6rem;
+            left: 0;
+        }
+        .bar {
+            width: 100%;
+            height: 100%;
+            background: url(../images/progress/bar.png) no-repeat center/cover;
+            position: absolute;
+            top: 0;
+            right: 100%;
+            overflow: hidden;
+            border-radius: 0.18rem;
+            transition: all 2s;
+            img {
+                position: absolute;
+                mix-blend-mode: overlay;
+            }
+            .light1 {
+                width: 0.65rem;
+                top: 0;
+                right: 0;
+            }
+            .light3 {
+                width: 1.66rem;
+                bottom: -0.6rem;
+                right: 0;
+            }
+        }
+    }
+}
+
+.index-slide {
+    .cloud {
+        width: 100%;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+    }
+    .bg-balloon1 {
+        top: 4.78rem;
+        right: 0.84rem;
+    }
+    .bg-balloon2 {
+        top: 5.5rem;
+        left: 1.32rem;
+    }
+    .balloon-box {
+        width: 3.8rem;
+        position: absolute;
+        top: 2.09rem;
+        left: 1.8rem;
+        .balloon {
+            width: 100%;
+            position: relative;
+            z-index: 10;
+        }
+        .notice {
+            width: 3.44rem;
+            position: absolute;
+            bottom: -3.22rem;
+            left: 0.7rem;
+            transform-origin: center top;
+            animation: indexNotice 3s linear infinite;
+        }
+    }
+    .shou {
+        width: 0.6rem;
+        position: absolute;
+        top: 10.6rem;
+        left: 50%;
+        opacity: 0;
+    }
+}
+
+.invitation-slide {
+    .title {
+        padding-top: 0.9rem;
+    }
+    .text {
+        width: 6.22rem;
+        margin-left: 0.67rem;
+        margin-bottom: 0.5rem;
+    }
+    .qr-code {
+        width: 1.16rem;
+    }
+    .remind {
+        width: 2.11rem;
+        margin-top: 0.1rem;
+    }
+}
+
+.schedule-slide {
+    .title {
+        padding-top: 0.76rem;
+    }
+    .schedule {
+        width: 6.6rem;
+        margin: 0.54rem auto 0;
+    }
+}
+
+.speaker-slide {
+    .title {
+        padding-top: 0.76rem;
+    }
+    .speaker-list {
+        width: 6.68rem;
+        margin: 0.38rem auto 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        li {
+            width: 25%;
+            margin-bottom: 0.5rem;
+            position: relative;
+            &:nth-child(even){
+                transform: translateY(0.38rem);
+            }
+            &:nth-child(1){
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 0.4rem;
+                    height: 0.48rem;
+                    bottom: -0.36rem;
+                    left: 0.64rem;
+                    background: url(../images/shou.png) no-repeat center/cover;
+                    opacity: 0;
+                }
+            }
+        }
+        .head-img {
+            width: 1.16rem;
+            margin: 0 auto;
+        }
+        p {
+            font-size: 0.2rem;
+            font-weight: bold;
+            color: #008ea9;
+            text-align: center;
+            padding-top: 0.12rem;
+        }
+    }
+}
+
+.code-slide {
+    .bg-balloon1 {
+        top: 4.14rem;
+        right: 6.04rem;
+    }
+    .bg-balloon2 {
+        width: 3.36rem;
+        top: 4.48rem;
+        left: 2.1rem;
+        animation: none;
+    }
+    .title {
+        padding-top: 1.02rem;
+    }
+    .info {
+        width: 6.45rem;
+        margin: 0.46rem auto 0;
+        padding-bottom: 0.34rem;
+        border-bottom: 0.02rem solid #28a6db;
+        img {
+            width: 2.95rem;
+            margin: 0;
+        }
+    }
+    .sub {
+        margin-top: 0.46rem;
+        width: 2.95rem;
+    }
+    .qr-code {
+        margin-top: 0.34rem;
+        width: 2.35rem;
+    }
+    .code-logo {
+        width: 6.08rem;
+        margin-top: 0.85rem;
+    }
+}
+
+.per-slide {
+    .info {
+        width: 6.96rem;
+        margin-left: 0.55rem;
+    }
+    .blessing {
+        width: 7.04rem;
+        position: absolute;
+        bottom: 0.78rem;
+        left: 0.32rem;
+    }
+}
+
+@media screen and (max-height: 640px){
+    .landmark {
+        bottom: 0.46rem;
+    }
+    .invitation-slide {
+        .title {
+            padding-top: 0.76rem;
+        }
+        .text {
+            width: 5.98rem;
+            margin-left: 0.75rem;
+            margin-bottom: 0.4rem;
+        }
+    }
+    .schedule-slide {
+        .schedule {
+            width: 6.2rem;
+            margin: 0.3rem auto 0;
+        }
+    }
+    .speaker-slide {
+        .speaker-list {
+            transform: scale(0.98);
+            margin-top: 0.2rem;
+            li {
+                margin-bottom: 0.3rem;
+            }
+        }
+    }
+    .code-slide {
+        .addr {
+            padding-bottom: 0.24rem;
+        }
+        .code-logo {
+            margin-top: 0.3rem;
+        }
+    }
+    .per-slide {
+        .info {
+            transform: scale(0.88);
+            margin-top: -0.56rem;
+        }
+        .blessing {
+            bottom: 0.62rem;
+            transform: scale(0.9);
+        }
+    }
+}
+@media screen and (max-height: 690px) and (min-width: 400px){
+    .landmark {
+        bottom: 0.46rem;
+    }
+    .invitation-slide {
+        .title {
+            padding-top: 0.76rem;
+        }
+        .text {
+            width: 5.98rem;
+            margin-left: 0.75rem;
+            margin-bottom: 0.4rem;
+        }
+    }
+    .schedule-slide {
+        .schedule {
+            width: 6.2rem;
+            margin: 0.3rem auto 0;
+        }
+    }
+    .speaker-slide {
+        .speaker-list {
+            transform: scale(0.98);
+            margin-top: 0.2rem;
+            li {
+                margin-bottom: 0.3rem;
+            }
+        }
+    }
+    .code-slide {
+        .addr {
+            padding-bottom: 0.24rem;
+        }
+        .code-logo {
+            margin-top: 0.3rem;
+        }
+    }
+    .per-slide {
+        .info {
+            transform: scale(0.88);
+            margin-top: -0.56rem;
+        }
+        .blessing {
+            bottom: 0.62rem;
+            transform: scale(0.88);
+        }
+    }
+}
+
+
+
+
+
+
+
+

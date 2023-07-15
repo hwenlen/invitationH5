@@ -1,0 +1,186 @@
+.swiper-slide-active.page0 .notice{
+    animation:notice 1s linear infinite;
+}
+
+@keyframes notice{
+    0%{
+        transform: scale(1);
+    }
+    49%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    99%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+ /* 活力印象 */
+.swiper-slide-active.page0 .font{
+    animation:fonts 0.5s ease-in forwards;
+    opacity: 0;
+}
+@keyframes fonts{
+    0%{
+        transform: scale(5);
+        opacity: 0;
+    }
+    
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+ /* 提示 */
+.swiper-slide-active.page0 .paper{
+    animation:paper 0.5s linear forwards;
+}
+@keyframes paper{
+    0%{
+       top:-2rem;
+    }
+    
+    100%{
+        top:0.6rem;
+    }
+}
+.swiper-slide-active.page0 .lBox .text1{
+    
+    animation:text1 0.8s ease-in forwards;
+    animation-delay: 0.8s;
+} 
+.swiper-slide-active.page0 .lBox .pointHouse{
+    
+    animation:text1 0.8s ease-in forwards;
+    animation-delay: 1.6s;
+} 
+.swiper-slide-active.page0 .lBox .end{
+    
+    animation:text1 0.8s ease-in forwards;
+    animation-delay: 2.4s;
+} 
+@keyframes text1{
+    0%{
+        left: -110%;
+        opacity: 0;
+    }
+    
+    100%{
+        left: 0%;
+        opacity: 1;
+    }
+}
+.swiper-slide-active.page0 .rBox .y1981{
+    
+    animation:y1985 0.8s ease-in forwards;
+    animation-delay: 0.8s;
+} 
+.swiper-slide-active.page0 .rBox .house{
+    animation:house 0.8s ease-in forwards;
+    animation-delay: 1.6s;
+} 
+.swiper-slide-active.page0 .rBox .y1995{
+    animation:y1985 0.8s ease-in forwards;
+    animation-delay: 2.4s;
+} 
+.swiper-slide-active.page0 .fBox{
+    animation:fonts 0.8s linear forwards;
+    animation-delay: 3.3s;
+} 
+@keyframes y1985{
+    0%{
+        left: 110%;
+        opacity: 0;
+    }
+    
+    100%{
+        left: 0%;
+        opacity: 1;
+    }
+}
+@keyframes house{
+    0%{
+        left: 110%;
+        opacity: 0;
+    }
+    
+    100%{
+        left: -1.62rem;
+        opacity: 1;
+    }
+}
+/* 火车 */
+.mesBg .train{
+    animation: train 6s linear infinite;
+}
+@keyframes train{
+    0%{
+        bottom: 3.2rem;
+        left: -3rem;
+    }
+    50%{
+        bottom: -2rem;
+        left: 6.2rem;
+    }
+    100%{
+        bottom: -2rem;
+        left: 6.2rem;
+    }
+}
+
+/* 第二页 */
+.swiper-slide-active.page1  ul li:nth-child(1) .lBox{
+    animation: text1 0.8s ease-in forwards;
+}
+.swiper-slide-active.page1  ul li:nth-child(1) .rBox{
+    animation: y1985 0.8s ease-in forwards;
+}
+.swiper-slide-active.page1  ul li:nth-child(2){
+    animation: fonts 0.8s ease-in forwards;
+    animation-delay: 0.8s;
+}
+.swiper-slide-active.page1  ul li:nth-child(3) .lBox{
+    animation: text1 0.8s ease-in forwards;
+    animation-delay: 1.6s;
+}
+.swiper-slide-active.page1  ul li:nth-child(3) .rBox{
+    animation: y1985 0.8s ease-in forwards;
+    animation-delay: 1.6s;
+}
+.swiper-slide-active.page1  ul li:nth-child(4) .lBox{
+    animation: text1 0.8s ease-in forwards;
+    animation-delay: 2.4s;
+}
+.swiper-slide-active.page1  ul li:nth-child(4) .rBox{
+    animation: y1985 0.8s ease-in forwards;
+    animation-delay: 2.4s;
+}
+.swiper-slide-active.page1  ul li:nth-child(5) .lBox{
+    animation: text1 0.8s ease-in forwards;
+    animation-delay: 3s;
+}
+.swiper-slide-active.page1  ul li:nth-child(5) .rBox{
+    animation: y1985 0.8s ease-in forwards;
+    animation-delay: 3s;
+}
+
+/* 第三页 */
+.swiper-slide-active.page2 .cont{
+    /* animation: page2cont 0.4s linear forwards; */
+}
+@keyframes page2cont{
+    0%{
+        left: 110%;
+    }
+    100%{
+        left: 0;
+    }
+}
+/* bgAnimate */
+.mesBg .bBox{
+    left: -101%;
+}

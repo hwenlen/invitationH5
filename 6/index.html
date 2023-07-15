@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no,adress=no" searchtype="map" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Navigate</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js?v=18"></script>
+</head>
+
+<body>
+   <audio src="music/weixin.mp3" preload="auto" id="wxAudio"></audio>
+   <audio src="music/train.mp3" preload="auto" id="trainAudio"></audio>
+   <audio src="music/bgm.mp3" preload="auto" loop id="bgm"></audio>
+   <audio src="music/fireworks.mp3" preload="auto" id="fireworksAudio"></audio>
+   
+   <div class="bgmplay"></div>
+   
+   <div id="loading">
+       <div class="loading-content">
+           <img src="images/loading-img.png" class="loading-round" alt="">
+           <img src="images/loading-text.png" alt="">
+       </div>
+   </div>
+
+   <img src="images/down-arrow.png" alt="" class="down-arrow">
+   
+    <div id="wrap">
+        <div class="start-shade"></div>
+        <div class="dialog-box">
+            <div class="before-shade"></div>
+            <div class="dialog other">
+                <div class="head-img">
+                    <img src="images/head-img1.jpg" alt="">
+                </div>
+                <div class="text">
+                    昨天去医院拜访王主任，他问了几个关于新产品的问题，我竟一时答不上来，哎... 
+                </div>
+            </div>
+            <div class="dialog other">
+                <div class="head-img">
+                    <img src="images/head-img2.jpg" alt="">
+                </div>
+                <div class="text">
+                    我也是，前几天，一个经销商和医生沟通时，被医生的问题难住了，便向我求助，我却也不知道，没能帮上忙，真是尴尬...
+                </div>
+            </div>
+            <div class="dialog me">
+                <div class="head-img">
+                    <img src="images/head-img3.jpg" alt="">
+                </div>
+                <div class="text">
+                    哎呀，都别叹气啦！咱公司新出了一个APP，有了它，什么问题都不怕！
+                </div>
+            </div>
+            <div class="dialog other">
+                <div class="head-img">
+                    <img src="images/head-img1.jpg" alt="">
+                </div>
+                <div class="text">
+                    什么APP呀？快给我们介绍一下！
+                </div>
+            </div>
+            <div class="dialog me">
+                <div class="head-img">
+                    
+                    <img src="images/head-img3.jpg" alt="">
+                </div>
+                <div class="text">
+                    NAVIGATE，是公司专为我们学习、提升而设计的移动学习平台，想了解的产品知识、想学习的销售经验，里面都有！而且使用十分方便~
+                </div>
+            </div>
+            <div class="dialog other">
+                <div class="head-img">
+                    <img src="images/head-img2.jpg" alt="">
+                </div>
+                <div class="text">
+                    太棒了！简直就我的救星呀~
+                </div>
+            </div>
+            <div class="dialog me">
+                <div class="head-img">
+                    
+                    <img src="images/head-img3.jpg" alt="">
+                </div>
+                <div class="text" id="toStart">
+                    <img src="images/dialog-link.png" alt="">
+                    <div class="hand">
+                        <img src="images/hand.gif" alt="">
+                        <p>点击开启</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog me">
+                <div class="head-img">
+                    <img src="images/head-img3.jpg" alt="">
+                </div>
+                <div class="text">
+                    点击链接，让我给你好好介绍一下它吧~
+                </div>
+            </div>
+            <img src="images/dialog-bottom.png" class="dialog-bottom" alt="">
+        </div>
+        <div class="main">
+            <div class="page page-1">
+                <img src="images/p1/p1-bg.jpg" class="page-bg" alt="">
+                <div class="page-content">
+                    <img src="images/p1/p1-phone.png" alt="" class="p1-phone animated">
+                    <img src="images/p1/p1-shout.png" alt="" class="p1-shout animated">
+                    <img src="images/p1/p1-text.png" alt="" class="p1-text animated">
+                    <img src="images/p1/p1-origin1.png" alt="" class="p1-origin1">
+                    <img src="images/p1/p1-origin2.png" alt="" class="p1-origin2">
+                    <img src="images/p1/p1-hill1.png" alt="" class="p1-hill1">
+                    <img src="images/p1/p1-hill2.png" alt="" class="p1-hill2">
+                    <div class="p1-car before">
+                        <img src="images/p1/p1-car.png" alt="" class="car">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="page page-2">
+                <img src="images/p2/p2-bg.jpg" class="page-bg" alt="">
+                <img src="images/join-hill1.png" alt="" class="join-img">
+                <div class="page-content">
+                    <img src="images/p2/p2-people.png" alt="" class="p2-people before animated">
+                    <img src="images/p2/p2-shout.png" alt="" class="p2-shout animated">
+                    <img src="images/p2/p2-text.png" alt="" class="p2-text animated">
+                    <img src="images/p2/p2-sun.png" alt="" class="p2-sun animated">
+                    <img src="images/p2/p2-moon.png" alt="" class="p2-moon animated">
+                    <img src="images/p2/p2-guideboard.png" alt="" class="p2-guideboard">
+                    <img src="images/p2/p2-hill.png" alt="" class="p2-hill">
+                    <div class="p2-car before">
+                        <img src="images/p2/p2-car.png" class="car" alt="">
+                        <img src="images/p2/car-head1.png" class="p2-car-people" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="page page-3">
+                <img src="images/p3/p3-bg.jpg" class="page-bg" alt="">
+                <img src="images/join-hill2.png" alt="" class="join-img">
+                <div class="page-content">
+                    <img src="images/p3/p3-table.png" alt="" class="p3-table">
+                    <img src="images/p3/p3-people.png" alt="" class="p3-people before animated">
+                    <img src="images/p3/p3-shout.png" alt="" class="p3-shout animated">
+                    <img src="images/p3/p3-text.png" alt="" class="p3-text animated">
+                    <img src="images/p3/p3-guideboard.png" alt="" class="p3-guideboard">
+                    <div class="p3-car before">
+                        <img src="images/p3/p3-car.png" class="car" alt="">
+                        <img src="images/p3/car-head1.png" class="p3-car-people" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="page page-4">
+                <img src="images/p4/p4-bg.jpg" class="page-bg" alt="">
+                <div class="page-content">
+                    <img src="images/p4/p4-people.png" alt="" class="p4-people before animated">
+                    <img src="images/p4/p4-shout.png" alt="" class="p4-shout animated">
+                    <img src="images/p4/p4-text.png" alt="" class="p4-text animated">
+                    <img src="images/p4/p4-pagoda.png" alt="" class="p4-pagoda">
+                    <div class="p4-pagoda-signal"></div>
+                    <img src="images/p4/p4-guideboard.png" alt="" class="p4-guideboard">
+                    <div class="p4-car before">
+                        <img src="images/p4/p4-car.png" class="car" alt="">
+                        <img src="images/p4/car-head1.png" class="p4-car-people" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="page page-5">
+                <img src="images/p5/p5-bg.jpg" class="page-bg" alt="">
+                <div class="page-content">
+                    <img src="images/p5/p5-people.png" alt="" class="p5-people before animated">
+                    <img src="images/p5/p5-shout.png" alt="" class="p5-shout animated">
+                    <img src="images/p5/p5-text.png" alt="" class="p5-text animated">
+                    <img src="images/p5/p5-cao.png" alt="" class="p5-cao">
+                    <div class="p5-car before">
+                        <img src="images/p5/p5-car.png" class="car" alt="">
+                        <img src="images/p5/car-head1.png" class="p5-car-people" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="page page-6">
+                <img src="images/p6/p6-bg.jpg" class="page-bg" alt="">
+                <div class="page-content">
+                    <img src="images/p6/p6-people.png" alt="" class="p6-people before animated">
+                    <img src="images/p6/p6-shout.png" alt="" class="p6-shout animated">
+                    <img src="images/p6/p6-text.png" alt="" class="p6-text animated">
+                    <img src="images/p6/p6-hill.png" alt="" class="p6-hill">
+                    <div class="p6-car before">
+                        <img src="images/p6/p6-car.png" class="car" alt="">
+                        <img src="images/p6/car-head1.png" class="p6-car-people" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="page page-7">
+                <img src="images/p7/p7-bg.jpg" class="page-bg" alt="">
+                <div class="page-content">
+                    <img src="images/p7/p7-people.png" alt="" class="p7-people before animated">
+                    <img src="images/p7/p7-shout.png" alt="" class="p7-shout animated">
+                    <img src="images/p7/p7-text.png" alt="" class="p7-text animated">
+                    <div class="p7-rise1">
+                        <img src="images/p7/p7-rise1.png" alt="">
+                    </div>
+                    <div class="p7-rise2">
+                        <img src="images/p7/p7-rise2.png" alt="">
+                    </div>
+                    <div class="p7-car before">
+                        <img src="images/p7/p7-car.png" class="car" alt="">
+                        <img src="images/p7/car-head.png" class="p7-car-people" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="page page-8">
+                <img src="images/p8/p8-bg.jpg" class="page-bg" alt="">
+                <div class="page-content">
+                    <img src="images/p8/p8-fireworks1.gif" alt="" class="p8-fireworks1 animated">
+                    <img src="images/p8/p8-fireworks2.gif" alt="" class="p8-fireworks2 animated">
+                    <img src="images/p8/p8-clock.png" alt="" class="p8-clock animated">
+                    <img src="images/p8/p8-shout.png" alt="" class="p8-shout animated">
+                    <img src="images/p8/p8-text.png" alt="" class="p8-text animated">
+                    <img src="images/p8/p8-shout2.png" alt="" class="p8-shout2 animated">
+                    <img src="images/p8/p8-shout3.png" alt="" class="p8-shout3 animated">
+                    <img src="images/p8/p8-crowd1.png" alt="" class="p8-crowd1 before">
+                    <img src="images/p8/p8-crowd2.png" alt="" class="p8-crowd2 before">
+                    <div class="p8-car before">
+                        <img src="images/p8/p8-car.png" class="car" alt="">
+                    </div>
+                    
+                    <p class="remind">
+                        目前平台使用仅开放给各BU销售市场及相关同事
+                        <span class="remind-shade"></span>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="btn-box">
+                <div class="btn">
+                    <img src="images/p8/btn1.png" alt="">
+                    <div class="btn-shade" id="btnAndroid"></div>
+                </div>
+                <div id="btnAndroidCopy" style="display: none;"></div>
+                <div class="btn">
+                    <img src="images/p8/btn2.png" alt="">
+                    <div class="btn-shade" id="btnApple"></div>
+                </div>
+                <div id="btnAppleCopy" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

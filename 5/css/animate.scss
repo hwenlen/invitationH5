@@ -1,0 +1,308 @@
+/*卷轴打开*/
+.page-develop {
+    width: 100% !important;
+    height: 100% !important;
+    transition: 1.8s;
+}
+
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+
+.fade-right-in {
+    animation: fadeRightIn 1s forwards;
+}
+
+.rotate360 {
+    animation: Rotate360 5s linear infinite;
+}
+
+.aid-kit-1 {
+    animation: aidKit1-1 4s linear forwards;
+    img {
+        animation: aidKit1-2 4s linear forwards;
+    }
+}
+.aid-kit-2 {
+    animation: aidKit2-1 4.2s cubic-bezier(.26,.73,.57,.75) forwards;
+    img {
+        animation: aidKit2-2 4.2s cubic-bezier(.53,.78,.51,.84) forwards;
+    }
+}
+.aid-kit-3 {
+    animation: aidKit3-1 5.2s ease-in forwards;
+    img {
+        animation: aidKit3-2 5.2s cubic-bezier(.16,.68,.25,.76) forwards;
+    }
+}
+.aid-kit-4 {
+    animation: aidKit4-1 4s linear forwards;
+    img {
+        animation: aidKit4-2 4s cubic-bezier(.72,.8,.67,.94) forwards;
+    }
+}
+.aid-kit-5 {
+    animation: aidKit5-1 4.8s ease-out forwards;
+    img {
+        animation: aidKit5-2 4.8s linear forwards;
+    }
+}
+
+@keyframes scrollLight {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+//提示滑动
+@keyframes hintAni {
+    0% {
+        top: 8px;
+    }
+
+    100% {
+        top: -8px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeRightIn {
+    from {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes Rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes tipAni {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes page1Ship {
+    0% {
+        top: 500px;
+        left: 82px;
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 0.75;
+        top: 380px;
+        left: 92px;
+    }
+}
+
+@keyframes page3Ship {
+    0% {
+        top: 786px;
+        left: -1px;
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 0.75;
+        top: 660px;
+        left: 5px;
+    }
+}
+
+@keyframes page4Ship {
+    0% {
+        top: 375px;
+        left: 35px;
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 0.75;
+        top: 240px;
+        left: 45px;
+    }
+}
+
+@keyframes aidKit1-1 {
+    0% {
+        width: 90px;
+        top: 724px;
+    }
+
+    100% {
+        width: 82px;
+        top: 1985px;
+    }
+}
+@keyframes aidKit1-2 {
+    0% {
+        width: 90px;
+        left: 0;
+    }
+
+    100% {
+        width: 82px;
+        //146
+        left: -29px;
+    }
+}
+
+@keyframes aidKit2-1 {
+    0% {
+        width: 82px;
+        top: 1985px;
+    }
+
+    100% {
+        width: 111px;
+        top: 2939px;
+    }
+}
+@keyframes aidKit2-2 {
+    0% {
+        width: 82px;
+        //146
+        left: -29px;
+    }
+
+    100% {
+        width: 111px;
+        //317
+        left: 143px;
+    }
+}
+
+@keyframes aidKit3-1 {
+    0% {
+        width: 111px;
+        top: 2939px;
+    }
+
+    100% {
+        width: 56px;
+        top: 4515px;
+    }
+}
+@keyframes aidKit3-2 {
+    0% {
+        width: 111px;
+        //317
+        left: 143px;
+    }
+
+    100% {
+        width: 56px;
+        //526
+        left: 351px;
+    }
+}
+
+@keyframes aidKit4-1 {
+    0% {
+        width: 56px;
+        top: 4515px;
+    }
+
+    100% {
+        width: 109px;
+        top: 5432px;
+    }
+}
+@keyframes aidKit4-2 {
+    0% {
+        width: 56px;
+        //317
+        left: 351px;
+    }
+    
+    60% {
+        width: 70px;
+        //317
+        left: 351px;
+    }
+
+    100% {
+        width: 109px;
+        //526
+        left: 165px;
+    }
+}
+
+@keyframes aidKit5-1 {
+    0% {
+        width: 109px;
+        top: 5432px;
+    }
+
+    100% {
+        width: 100px;
+        top: 6880px;
+    }
+}
+@keyframes aidKit5-2 {
+    0% {
+        width: 109px;
+        //526
+        left: 165px;
+    }
+    
+    24% {
+        width: 107px;
+        left: -20px;
+    }
+    
+    48% {
+        width: 105px;
+        left: -50px;
+    }
+
+    100% {
+        width: 100px;
+        //380 -175
+        left: 205px;
+    }
+}

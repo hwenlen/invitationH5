@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/reset.css?v=17">
+    <link rel="stylesheet" href="css/style.css?v=17">
+    <title>中国心身医学高峰论坛</title>
+    <script src="js/pageSizeSet.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/html2canvas.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+    <script src="js/index.js?v=17"></script>
+</head>
+
+<body>
+    <div class="img-none" style="display: none;">
+        <img src="images/bg/loading-bg.jpg" alt="">
+        <img src="images/page-balloon.png" class="" alt="">
+        <img src="images/progress/bar.png" class="" alt="">
+        <img src="images/progress/bg.png" class="" alt="">
+        <img src="images/progress/light1.png" class="" alt="">
+        <img src="images/progress/light2.png" class="" alt="">
+        <img src="images/progress/light3.png" class="" alt="">
+        <img src="images/progress/shade.png" class="" alt="">
+    </div>
+    <!--先加载的图片-->
+    
+    <audio src="music/bg.mp3" id="bgMusic" preload loop="loop" controls></audio>
+    <div class="audio-btn">
+        <img src="music/btn-play.png" id="btn-play" class="" alt="">
+        <img src="music/btn-pause.png" id="btn-pause" class="" alt="">
+    </div>
+    
+    
+    <div class="wrap" id="playbill">
+
+        <div class="main">
+            <header class="header">
+                <img src="images/header-logo.png" alt="">
+            </header>
+
+            <div class="content">
+                <div class="page-conteiner swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-no-swiping loading-slide">
+
+                            <div class="balloon">
+                                <img src="images/page-balloon.png" class="" alt="">
+                            </div>
+                            <div class="loading-title">
+                                <img src="images/loading-title.png" class="" alt="">
+                            </div>
+
+                            <div class="progress" id="progress">
+                                <div class="bar">
+                                    <img src="images/progress/light1.png" alt="" class="light1">
+                                    <img src="images/progress/light3.png" alt="" class="light3">
+                                </div>
+                                <img src="images/progress/light2.png" alt="" class="light2">
+                                <img src="images/progress/shade.png" alt="" class="shade">
+                            </div>
+
+                        </div>
+                        <!--以上是loading 0-->
+
+                        <div class="swiper-slide swiper-no-swiping index-slide">
+
+                            <img src="images/index-cloud.png" alt="" class="cloud">
+
+                            <img src="images/bg/ball-tr.png" alt="" class="bg-balloon1 animated">
+                            <img src="images/bg/ball-bl1.png" alt="" class="bg-balloon2 animated">
+
+                            <div class="balloon-box animated">
+                                <img src="images/index-balloon.png" class="balloon" alt="">
+                                <img src="images/index-notice.png" class="notice" alt="">
+                            </div>
+                            
+                            <img src="images/shou.png" class="shou" alt="">
+
+                        </div>
+                        <!--以上是首页 1-->
+
+                        <div class="swiper-slide invitation-slide">
+
+                            <img src="images/page-balloon.png" class="page-balloon" alt="">
+
+                            <img src="images/bg/ball-tr.png" alt="" class="bg-balloon1">
+                            <img src="images/bg/ball-bl2.png" alt="" class="bg-balloon2">
+                            <img src="images/bg/landmark.png" alt="" class="landmark">
+
+                            <div class="page-main">
+                                <h2 class="title">
+                                    <img src="images/invit-title.png" alt="">
+                                </h2>
+                                <div class="text">
+                                    <img src="images/invit-text.png?v=2" alt="">
+                                </div>
+                                
+                                <img src="images/qr-code.png" alt="" class="qr-code">
+                                
+                                <img src="images/invit-remind.png" alt="" class="remind">
+                            </div>
+                            
+                            <img src="images/arrow_down.png" class="arrow" alt="">
+
+                        </div>
+                        <!--以上是邀请函 2-->
+
+                        <div class="swiper-slide schedule-slide">
+
+                            <img src="images/page-balloon.png" class="page-balloon" alt="">
+
+                            <img src="images/bg/ball-tr.png" alt="" class="bg-balloon1">
+                            <img src="images/bg/ball-bl2.png" alt="" class="bg-balloon2">
+                            <img src="images/bg/landmark.png" alt="" class="landmark">
+
+                            <div class="page-main">
+                                <h2 class="title">
+                                    <img src="images/schedule-title.png" alt="">
+                                </h2>
+                                <div class="schedule">
+                                    <img src="images/schedule-table.png?v=3" alt="">
+                                </div>
+                            </div>
+                            
+                            <img src="images/arrow_down.png" class="arrow" alt="">
+
+                        </div>
+                        <!--以上是日程 3-->
+
+                        <div class="swiper-slide speaker-slide">
+
+                            <img src="images/bg/ball-tr.png" alt="" class="bg-balloon1">
+                            <img src="images/bg/ball-bl2.png" alt="" class="bg-balloon2">
+                            <img src="images/bg/landmark.png" alt="" class="landmark">
+
+                            <div class="page-main animated">
+                                <h2 class="title">
+                                    <img src="images/speaker-title.png" alt="">
+                                </h2>
+                                <ul class="speaker-list">
+                                    <!--<li data-index="6">
+                                        <div class="head-img">
+                                            <img src="images/head-1.png" alt="">
+                                        </div>
+                                        <p>吴爱勤&nbsp;教授</p>
+                                    </li>-->
+                                </ul>
+                            </div>
+                            
+                            <img src="images/arrow_down.png" class="arrow" alt="">
+
+                        </div>
+                        <!--以上是讲者列表 4-->
+
+                        <div class="swiper-slide code-slide">
+
+                            <img src="images/page-balloon.png" class="page-balloon" alt="">
+
+                            <img src="images/bg/ball-tr.png" alt="" class="bg-balloon1">
+                            <img src="images/bg/ball-bl3.png" alt="" class="bg-balloon2">
+                            <img src="images/bg/landmark.png" alt="" class="landmark">
+
+                            <div class="page-main">
+                                <h2 class="title">
+                                    <img src="images/code-title.png" alt="">
+                                </h2>
+
+                                <div class="info">
+                                    <img src="images/code-text1.png" alt="">
+                                </div>
+
+                                <img src="images/code-text2.png" alt="" class="sub">
+
+                                <img src="images/qr-code.png?v=1" alt="" class="qr-code">
+                            </div>
+                            
+                            <img src="images/code-logo.png?v=1" alt="" class="code-logo animated">
+
+                        </div>
+                        <!--以上是二维码地址 5-->
+
+                        <div class="swiper-slide swiper-no-swiping per-slide">
+                            <div class="page-main">
+                                <div class="info">
+                                    <img src="images/speakers/speaker-1.png" alt="">
+                                </div>
+                            </div>
+
+                            <img src="images/speakers/speaker-blessing-1.png" class="blessing" alt="">
+
+                        </div>
+                        <!--以上是教授1 6-->
+
+                        <div class="swiper-slide swiper-no-swiping per-slide">
+                            <div class="page-main">
+                                <div class="info">
+                                    <img src="images/speakers/speaker-2.png?v=1" alt="">
+                                </div>
+                            </div>
+
+                            <img src="images/speakers/speaker-blessing-2.png" class="blessing" alt="">
+
+                        </div>
+                        <!--以上是教授2 7-->
+
+                        <div class="swiper-slide swiper-no-swiping per-slide">
+                            <div class="page-main">
+                                <div class="info">
+                                    <img src="images/speakers/speaker-3.png" alt="">
+                                </div>
+                            </div>
+
+                            <img src="images/speakers/speaker-blessing-3.png" class="blessing" alt="">
+
+                        </div>
+                        <!--以上是教授3 8-->
+
+                        <div class="swiper-slide swiper-no-swiping per-slide">
+                            <div class="page-main">
+                                <div class="info">
+                                    <img src="images/speakers/speaker-4.png" alt="">
+                                </div>
+                            </div>
+
+                            <img src="images/speakers/speaker-blessing-4.png" class="blessing" alt="">
+
+                        </div>
+                        <!--以上是教授4 9-->
+
+                        <div class="swiper-slide swiper-no-swiping per-slide">
+                            <div class="page-main">
+                                <div class="info">
+                                    <img src="images/speakers/speaker-5.png" alt="">
+                                </div>
+                            </div>
+
+                            <img src="images/speakers/speaker-blessing-5.png" class="blessing" alt="">
+
+                        </div>
+                        <!--以上是教授5 10-->
+
+                        <div class="swiper-slide swiper-no-swiping per-slide">
+                            <div class="page-main">
+                                <div class="info">
+                                    <img src="images/speakers/speaker-6.png" alt="">
+                                </div>
+                            </div>
+
+                            <img src="images/speakers/speaker-blessing-6.png" class="blessing" alt="">
+
+                        </div>
+                        <!--以上是教授6 11-->
+
+                        <div class="swiper-slide swiper-no-swiping per-slide">
+                            <div class="page-main">
+                                <div class="info">
+                                    <img src="images/speakers/speaker-7.png" alt="">
+                                </div>
+                            </div>
+
+                            <img src="images/speakers/speaker-blessing-7.png" class="blessing" alt="">
+
+                        </div>
+                        <!--以上是教授7 12-->
+
+                        <div class="swiper-slide swiper-no-swiping per-slide">
+                            <div class="page-main">
+                                <div class="info">
+                                    <img src="images/speakers/speaker-8.png" alt="">
+                                </div>
+                            </div>
+
+                            <img src="images/speakers/speaker-blessing-8.png" class="blessing" alt="">
+
+                        </div>
+                        <!--以上是教授8 13-->
+
+                        <div class="swiper-slide swiper-no-swiping per-slide">
+                            <div class="page-main">
+                                <div class="info">
+                                    <img src="images/speakers/speaker-9.png" alt="">
+                                </div>
+                            </div>
+
+                            <img src="images/speakers/speaker-blessing-9.png" class="blessing" alt="">
+
+                        </div>
+                        <!--以上是教授9 14-->
+
+                        <div class="swiper-slide swiper-no-swiping per-slide">
+                            <div class="page-main">
+                                <div class="info">
+                                    <img src="images/speakers/speaker-10.png" alt="">
+                                </div>
+                            </div>
+
+                            <img src="images/speakers/speaker-blessing-10.png" class="blessing" alt="">
+
+                        </div>
+                        <!--以上是教授10 15-->
+
+                        <div class="swiper-slide swiper-no-swiping per-slide">
+                            <div class="page-main">
+                                <div class="info">
+                                    <img src="images/speakers/speaker-11.png" alt="">
+                                </div>
+                            </div>
+
+                            <img src="images/speakers/speaker-blessing-11.png" class="blessing" alt="">
+
+                        </div>
+                        <!--以上是教授11 16-->
+
+                        <div class="swiper-slide swiper-no-swiping per-slide">
+                            <div class="page-main">
+                                <div class="info">
+                                    <img src="images/speakers/speaker-12.png" alt="">
+                                </div>
+                            </div>
+
+                            <img src="images/speakers/speaker-blessing-12.png" class="blessing" alt="">
+
+                        </div>
+                        <!--以上是教授12 17-->
+
+                        <div class="swiper-slide swiper-no-swiping per-slide">
+                            <div class="page-main">
+                                <div class="info">
+                                    <img src="images/speakers/speaker-13.png" alt="">
+                                </div>
+                            </div>
+
+                            <img src="images/speakers/speaker-blessing-13.png" class="blessing" alt="">
+
+                        </div>
+                        <!--以上是教授13 18-->
+
+                        <div class="swiper-slide swiper-no-swiping per-slide">
+                            <div class="page-main">
+                                <div class="info">
+                                    <img src="images/speakers/speaker-14.png" alt="">
+                                </div>
+                            </div>
+
+                            <img src="images/speakers/speaker-blessing-14.png" class="blessing" alt="">
+
+                        </div>
+                        <!--以上是教授14 19-->
+
+                        <div class="swiper-slide swiper-no-swiping per-slide">
+                            <div class="page-main">
+                                <div class="info">
+                                    <img src="images/speakers/speaker-15.png" alt="">
+                                </div>
+                            </div>
+
+                            <img src="images/speakers/speaker-blessing-15.png" class="blessing" alt="">
+
+                        </div>
+                        <!--以上是教授15 20-->
+
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <img src="images/footer-logo.png" alt="">
+            </footer>
+        </div>
+        <div class="img-none" style="display: none;">
+            <img src="images/bg/bg1.jpg" alt="">
+            <img src="images/bg/bg2.jpg" alt="">
+        </div>
+        <div class="bg-wrap">
+            <div class="bg loading-bg"></div>
+            <div class="bg bg1"></div>
+            <div class="bg bg2"></div>
+        </div>
+    </div>
+    
+    <img src="images/back-btn.png" id="back" alt="">
+    <img src="images/schedule-table.png" id="downImg" alt="">
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c77228d7860e850e5999ddf92782dfba";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</body>
+
+</html>

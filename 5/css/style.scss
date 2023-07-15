@@ -1,0 +1,653 @@
+@import 'animate.scss';
+/*以上是动画设置*/
+
+$animateTime: 1.0s;
+
+html,body {
+    width: 100%; 
+    height: 100%; 
+    background: url(../images/bg.jpg) repeat-y center top #eee5db;
+    background-size: cover;
+    overflow: hidden;
+    font-family: "Source Han Sans CN", 'Helvetica', 'PingFangTC-Regular', 'PingFangTC', "PingFang SC", "Droid Sans", 'Tahoma', 'Arial', 'sans-serif';
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    .img1 {
+        width: 420px;
+        position: absolute;
+        top: 91px;
+        right: 151px;
+    }
+    .img2 {
+        width: 103px;
+        position: absolute;
+        bottom: 246px;
+        right: 309px;
+        animation: tipAni 1s linear infinite;
+        display: none;
+    }
+    .img3 {
+        width: 111px;
+        position: absolute;
+        bottom: 38px;
+        left: 54px;
+    }
+
+    .scroll-light {
+        width: 636px;
+        height: 156px;
+        mix-blend-mode: screen;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1000;
+        overflow: hidden;
+        transform: translate(-50%,-50%);
+        animation: scrollLight 1.5s linear infinite;
+        display: none;
+        img {
+            width: 636px;
+            height: 395px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+}
+
+.divhidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.tip-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    height: 100%;
+    background-color: #000;
+    display: none;
+    .tip {
+        width: 88%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.painted-scroll {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 400;
+    width: 750px;
+    height: 75px;
+    background: url(../images/scroll-frame.png) no-repeat center/cover;
+    &.painted-head {
+        top: 0;
+    }
+    &.painted-footer {
+        bottom: 0;
+    }
+    .figure {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 750px;
+        max-width: none;
+    }
+}
+
+.audio-btn {
+    width: 56px;
+    height: 56px;
+    background: url(../music/music.png) no-repeat;
+    background-size: 112px 56px;
+    position: absolute;
+    top: 8px;
+    right: 63px;
+    display: none;
+    &.play {
+        background-position: 0 0;
+    }
+    &.pause {
+        background-position: -56px 0;
+    }
+}
+
+.popup-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2001;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    .popup {
+        width: 318px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .fingerprint-btn {
+        width: 176px;
+        height: 126px;
+        position: absolute;
+        left: 66px;
+        bottom: 86px;
+    }
+}
+
+.hints {
+    width: 100px;
+    height: 88px;
+    position: fixed;
+    left: 86px;
+    bottom: 110px;
+    z-index: 1000;
+    opacity: 0;
+    &.show {
+        transition: 0.4s;
+        opacity: 1;
+        .hint-1 {
+            animation: hintAni 1.6s ease-out infinite;
+        }
+    }
+    img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+    .hint-1 {
+        top: 8px;
+    }
+}
+
+.main {
+    width: 100%;
+    height: 156px;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+}
+
+.content {
+    width: 625px;
+    overflow: hidden;
+    position: relative;
+    padding: 75px 0 73px;
+    margin: 0 63px 0 62px;
+    z-index: 300;
+}
+
+
+.page {
+    position: relative;
+    font-size: 0;
+    width: 625px;
+    .page-bg {
+        img {
+            width: 100%;
+        }
+    }
+}
+.page-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    overflow: hidden;
+    img {
+        position: absolute;
+    }
+}
+
+.aid-kit {
+    width: 90px;
+    position: absolute;
+    top: 724px;
+    left: 175px;
+    z-index: 100;
+    display: none;
+    img {
+        width: 90px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
+.page {
+    .text {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        img {
+            height: 100%;
+            position: relative;
+        }
+    }
+    .light {
+        position: absolute;
+        mix-blend-mode: screen;
+    }
+    .ship {
+        opacity: 0.75;
+        position: absolute;
+    }
+}
+
+.page-1 {
+    .light {
+        width: 698px;
+        top: 210px;
+        left: 15px;
+    }
+    .ship {
+        width: 176px;
+        top: 410px;
+        left: 92px;
+        opacity: 0;
+        &.sail {
+            animation: page1Ship 6s 2.6s linear forwards;
+        }
+    }
+    .logo {
+        width: 54px;
+        top: 16px;
+        right: 17px;
+    }
+    .letter {
+        width: 150px;
+        position: absolute;
+        .letter-img {
+            img {
+                transition: all 1.6s;
+            }
+            .l2 {
+                opacity: 0;
+            }
+        }
+        img,.txt {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &.active {
+            .letter-img {
+                .l1 {
+                    opacity: 0;
+                }
+                .l2 {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .letter-1 {
+        top: 134px;
+        right: 166px;
+        &.active {
+            width: 204px;
+            top: 347px;
+            right: 126px;
+            transition: all 1.6s;
+        }
+    }
+    .letter-2 {
+        top: 432px;
+        right: 166px;
+        &.active {
+            width: 204px;
+            top: 529px;
+            right: 126px;
+            transition: all 1.6s;
+        }
+    }
+    .letter-3 {
+        top: 718px;
+        right: 166px;
+        &.active {
+            width: 204px;
+            top: 700px;
+            right: 126px;
+            transition: all 1.6s;
+        }
+    }
+    .title {
+        width: 120px;
+        left: 12px;
+        bottom: 200px;
+        animation-delay: 2.6s;
+    }
+}
+
+.page-2 {
+    .text {
+        height: 597px;
+        top: 627px;
+        right: 207px;
+        .text1 {
+            animation-delay: 0s;
+        }
+        .text2 {
+            animation-delay: 0.6s;
+        }
+        .text3 {
+            animation-delay: 1.2s;
+        }
+        .text4 {
+            animation-delay: 1.8s;
+        }
+    }
+    .p2-1 {
+        width: 144px;
+        top: 364px;
+        right: 189px;
+        display: none;
+    }
+    .p2-c1,.p2-c2,.p2-c3 {
+        position: absolute;
+        overflow: hidden;
+        img {
+            max-width: none;
+        }
+    }
+    .p2-c1 {
+        width: 140px;
+        height: 267px;
+        bottom: 858px;
+        right: 198px;
+        height: 0;
+        transition: all 0.8s;
+        img {
+            left: 0;
+            bottom: 0;
+        }
+        &.show {
+            height: 267px;
+        }
+    }
+    .p2-c2 {
+        width: 159px;
+        height: 263px;
+        top: 435px;
+        right: 86px;
+        height: 0;
+        transition: all 0.8s;
+        img {
+            left: 0;
+            top: 0;
+        }
+        &.show {
+            height: 263px;
+        }
+    }
+    .p2-c3 {
+        width: 270px;
+        height: 123px;
+        top: 460px;
+        right: 219px;
+        width: 0;
+        transition: all 0.8s;
+        img {
+            right: 0;
+            bottom: 0;
+        }
+        &.show {
+            width: 270px;
+        }
+    }
+}
+
+.page-3 {
+    .text {
+        height: 694px;
+        top: 520px;
+        right: 171px;
+        .text1 {
+            animation-delay: 0s;
+        }
+        .text2 {
+            animation-delay: 0.6s;
+        }
+        .text3 {
+            animation-delay: 1.2s;
+        }
+        .text4 {
+            animation-delay: 1.8s;
+        }
+    }
+    .light {
+        width: 489px;
+        top: 534px;
+        left: 82px;
+    }
+    .ship {
+        width: 265px;
+        top: 660px;
+        left: 5px;
+        opacity: 0;
+        &.sail {
+            animation: page3Ship 6s linear forwards;
+        }
+    }
+}
+
+.page-4 {
+    .title {
+        width: 38px;
+        top: 625px;
+        right: 45px;
+        animation-delay: 0s;
+    }
+    .schedule {
+        width: 489px;
+        top: 116px;
+        left: 26px;
+        animation-delay: 0.6s;
+    }
+}
+
+.page-5 {
+    .text {
+        height: 673px;
+        top: 338px;
+        right: 94px;
+        .text1 {
+            animation-delay: 0s;
+        }
+        .text2 {
+            animation-delay: 0.6s;
+        }
+        .text3 {
+            animation-delay: 1.2s;
+        }
+        .text4 {
+            animation-delay: 1.8s;
+        }
+        .text5 {
+            animation-delay: 2.4s;
+        }
+        .text6 {
+            animation-delay: 3.0s;
+        }
+        .text7 {
+            animation-delay: 3.6s;
+        }
+    }
+    .addr-icon1 {
+        top: 803px;
+        left: 162px;
+        animation-delay: 0s;
+    }
+    .addr-icon2 {
+        top: 572px;
+        left: 150px;
+        animation-delay: 0.6s;
+    }
+    .addr-icon3 {
+        top: 758px;
+        left: 152px;
+        animation-delay: 1.2s;
+    }
+    .addr-icon4 {
+        top: 784px;
+        left: 142px;
+        animation-delay: 1.8s;
+    }
+    .addr-icon5 {
+        top: 725px;
+        left: 93px;
+        animation-delay: 2.4s;
+    }
+    .addr-icon6 {
+        top: 694px;
+        left: 224px;
+        animation-delay: 3.0s;
+    }
+    .addr-icon7 {
+        top: 692px;
+        left: 144px;
+        animation-delay: 3.6s;
+    }
+}
+
+.page-6 {
+    .light {
+        width: 592px;
+        top: 98px;
+        left: 0px;
+    }
+    .ship {
+        width: 202px;
+        top: 240px;
+        left: 45px;
+        opacity: 0;
+        &.sail {
+            animation: page4Ship 6s 0.9s linear forwards;
+        }
+    }
+    .title {
+        width: 160px;
+        bottom: 365px;
+        right: 104px;
+        animation-delay: 0.6s;
+    }
+    .txt {
+        width: 35px;
+        bottom: 192px;
+        right: 295px;
+    }
+    .fingerprint {
+        width: 188px;
+        height: 124px;
+        position: absolute;
+        left: 79px;
+        bottom: 652px;
+    }
+    .seal {
+        width: 161px;
+        left: 91px;
+        bottom: 491px;
+        animation-delay: 1.8s;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    #tips {
+        display: none;
+    }
+} 
+@media screen and (orientation: landscape) {
+    #tips {
+        display: block;
+    }
+}
+
+@media screen and (max-height: 1250px) {
+    #loading {
+        .img1 {
+            top: 32px;
+        }
+        .img2 {
+            bottom: 170px;
+        }
+    }
+}
+
+@media screen and (min-height: 1300px) {
+    .page-1 {
+        .title {
+            bottom: 90px;
+        }
+    }
+}
+
+@media screen and (min-height: 1380px) {
+    .page-1 {
+        .title {
+            bottom: 60px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

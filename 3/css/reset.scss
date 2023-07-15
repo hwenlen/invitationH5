@@ -1,0 +1,52 @@
+html,
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Helvetica Neue", 'Helvetica', 'PingFangTC-Regular', 'PingFangTC', "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", 'Arial', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    line-height: 1;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+input,
+img {
+    vertical-align: middle;
+    outline: none;
+    border: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+button {
+    outline: none;
+}
+
+* {
+    box-sizing: border-box;
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css?v=1">
+    <title>高德美年会</title>
+    <script src="js/pageSizeSet.js"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.5&amp;key=ada70fe2823123d4a4c778ed693ab5ea"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+    <script src="js/an.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div id="loading">
+        <div class="loading-content">
+            <img src="images/loading1.png" alt="">
+            <img src="images/loading2.png" class="rolling" alt="">
+        </div>
+    </div>
+    
+    <div class="back">
+        <img src="images/back.png" alt="">
+    </div>
+    
+    <audio src="music/bg.mp3" id="bgMusic" preload="auto" loop="loop"></audio>
+    <div class="audio-btn">
+        <img src="music/btn_play.png" id="btn-play" class="" alt="">
+        <img src="music/btn_stop.png" id="btn-pause" class="" alt="">
+    </div>
+   
+    <div id="fra">
+        <img src="images/bg/anibg/anibg2.png" alt="">
+        <img src="images/bg/anibg/anibg4.png" alt="">
+        <img src="images/bg/anibg/anibg6.png" alt="">
+        <img src="images/bg/anibg/anibg8.png" alt="">
+        <img src="images/bg/anibg/anibg10.png" alt="">
+        <img src="images/bg/anibg/anibg12.png" alt="">
+        <img src="images/bg/anibg/anibg14.png" alt="">
+        <img src="images/bg/anibg/anibg16.png" alt="">
+        <img src="images/bg/anibg/anibg18.png" alt="">
+        <img src="images/bg/anibg/anibg20.png" alt="">
+        <img src="images/bg/anibg/anibg22.png" alt="">
+        <img src="images/bg/anibg/anibg24.png" alt="">
+        <img src="images/bg/anibg/anibg26.png" alt="">
+        <img src="images/bg/anibg/anibg28.png" alt="">
+        <img src="images/bg/anibg/anibg30.png" alt="">
+        <img src="images/bg/anibg/anibg32.png" alt="">
+        <img src="images/bg/anibg/anibg34.png" alt="">
+        <img src="images/bg/anibg/anibg36.png" alt="">
+        <img src="images/bg/anibg/anibg38.png" alt="">
+        <img src="images/bg/anibg/anibg40.png" alt="">
+        <img src="images/bg/anibg/anibg42.png" alt="">
+        <img src="images/bg/anibg/anibg44.png" alt="">
+        <img src="images/bg/anibg/anibg46.png" alt="">
+        <img src="images/bg/anibg/anibg48.png" alt="">
+        <img src="images/bg/anibg/anibg50.png" alt="">
+        <img src="images/bg/anibg/anibg52.png" alt="">
+        <img src="images/bg/anibg/anibg54.png" alt="">
+        <img src="images/bg/anibg/anibg56.png" alt="">
+        <img src="images/bg/anibg/anibg58.png" alt="">
+        <img src="images/bg/anibg/anibg60.png" alt="">
+        <img src="images/bg/anibg/anibg62.png" alt="">
+        <img src="images/bg/anibg/anibg64.png" alt="">
+        <img src="images/bg/anibg/anibg66.png" alt="">
+        <img src="images/bg/anibg/anibg68.png" alt="">
+        <img src="images/bg/anibg/anibg70.png" alt="">
+        <img src="images/bg/anibg/anibg72.png" alt="">
+        <img src="images/bg/anibg/anibg74.png" alt="">
+        <img src="images/bg/anibg/anibg76.png" alt="">
+        <img src="images/bg/anibg/anibg78.png" alt="">
+        <img src="images/bg/anibg/anibg80.png" alt="">
+        <img src="images/bg/anibg/anibg82.png" alt="">
+        <img src="images/bg/anibg/anibg84.png" alt="">
+        <img src="images/bg/anibg/anibg86.png" alt="">
+        <img src="images/bg/anibg/anibg88.png" alt="">
+        <img src="images/bg/anibg/anibg90.png" alt="">
+        <img src="images/bg/anibg/anibg92.png" alt="">
+        <img src="images/bg/anibg/anibg94.png" alt="">
+        <img src="images/bg/anibg/anibg96.png" alt="">
+        <img src="images/bg/anibg/anibg98.png" alt="">
+        <img src="images/bg/anibg/anibg100.png" alt="">
+        <img src="images/bg/anibg/anibg102.png" alt="">
+        <img src="images/bg/anibg/anibg104.png" alt="">
+        <img src="images/bg/anibg/anibg106.png" alt="">
+        <img src="images/bg/anibg/anibg108.png" alt="">
+        <img src="images/bg/anibg/anibg110.png" alt="">
+        <img src="images/bg/anibg/anibg112.png" alt="">
+        <img src="images/bg/anibg/anibg114.png" alt="">
+        <img src="images/bg/anibg/anibg116.png" alt="">
+        <img src="images/bg/anibg/anibg118.png" alt="">
+        <img src="images/bg/anibg/anibg120.png" alt="">
+        <img src="images/bg/anibg/anibg122.png" alt="">
+        <img src="images/bg/anibg/anibg124.png" alt="">
+        <img src="images/bg/anibg/anibg126.png" alt="">
+        <img src="images/bg/anibg/anibg128.png" alt="">
+        <img src="images/bg/anibg/anibg130.png" alt="">
+        <img src="images/bg/anibg/anibg132.png" alt="">
+        <img src="images/bg/anibg/anibg134.png" alt="">
+        <img src="images/bg/anibg/anibg136.png" alt="">
+        <img src="images/bg/anibg/anibg138.png" alt="">
+        <img src="images/bg/anibg/anibg140.png" alt="">
+        <img src="images/bg/anibg/anibg142.png" alt="">
+        <img src="images/bg/anibg/anibg144.png" alt="">
+        <img src="images/bg/anibg/anibg146.png" alt="">
+        <img src="images/bg/anibg/anibg148.png" alt="">
+        <img src="images/bg/anibg/anibg150.png" alt="">
+        <img src="images/bg/anibg/anibg152.png" alt="">
+        <img src="images/bg/anibg/anibg154.png" alt="">
+        <img src="images/bg/anibg/anibg156.png" alt="">
+        <img src="images/bg/anibg/anibg158.png" alt="">
+        <img src="images/bg/anibg/anibg160.png" alt="">
+    </div>
+    
+    <div class="wrap-bg">
+        <div id="roundAnimate">
+            <div id="roundWrapTop"></div>
+            <div id="roundWrapBottom"></div>
+        </div>
+        <div id="bgImg" style="background-image: url(images/bg/anibg/anibg2.png);"></div>
+        <img src="images/bg/bg-shade.png" alt="" id="bgShade">
+    </div>
+    
+    <div class="wrap">
+        <header class="header">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+        </header>
+        
+        <div class="content">
+            <div class="page-conteiner swiper-container">
+                <div class="swiper-wrapper">
+                   
+                    <div class="swiper-slide index-slide">
+                        <div class="page-main">
+                            <div class="logo">
+                                <img src="images/logo.png" alt="">
+                            </div>
+                            <div class="text">
+                                <img src="images/index-text.png" alt="">
+                                <div class="light1">
+                                    <img src="images/index-light1.png" alt="">
+                                </div>
+                                <div class="light2">
+                                    <img src="images/index-light2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="title">
+                                <div class="title-round">
+                                    <img src="images/index-title-round.png" alt="">
+                                </div>
+                                <div class="title-text">
+                                    <img src="images/index-title.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--以上是首页-->
+                    
+                    <div class="swiper-slide invitation-slide">
+                        
+                        <div class="page-main">
+                            <div class="title">
+                                <img src="images/invitation-title.png" alt="">
+                            </div>
+                            <div class="swiper-container invit-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="text">
+                                            <img src="images/invitation-text1.png" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <img src="images/invitation-text2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                            <div class="signature">
+                                <img src="images/invitation-signature.png" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--以上是邀请函-->
+                    
+                    <div class="swiper-slide video-slide">
+                        
+                        <div class="page-main">
+                            <div class="page-head">
+                                <div class="title">
+                                    <img src="images/video-title.png" alt="">
+                                </div>
+                                <div class="sub">
+                                    <img src="images/video-sub.png" alt="">
+                                </div>
+                            </div>
+                            <div class="video-wrap">
+                                <div class="video-decorate">
+                                    <img src="images/video-bg.png" alt="">
+                                </div>
+                                <div class="video-box" id="videoContent1">
+                                    <video id="video1" src="video/video.mp4" webkit-playsinline="" playsinline="" x-webkit-airplay="true" preload="auto"></video>
+                                    <img src="images/video-poster.png" alt="" class="video-poster">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--以上是视频1-->
+                    
+                    <div class="swiper-slide address-slide">
+                        
+                        <div class="page-main">
+                            <div class="page-head">
+                                <div class="title">
+                                    <img src="images/address-title.png" alt="">
+                                </div>
+                                <div class="sub">
+                                    <img src="images/address-sub.png" alt="">
+                                </div>
+                            </div>
+                            
+                            <div class="text">
+                                <img src="images/address-text.png" alt="">
+                            </div>
+                            
+                            <div class="map" id="mapContainer">
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--以上是地址-->
+                    
+                    <div class="swiper-slide meeting-slide">
+                        
+                        <div class="page-main">
+                            <div class="page-head">
+                                <div class="title">
+                                    <img src="images/meeting-title.png" alt="">
+                                </div>
+                                <div class="sub">
+                                    <img src="images/meeting-sub.png" alt="">
+                                </div>
+                            </div>
+                            
+                            <div class="table-title">
+                                <img src="images/meeting-table-title.png" alt="">
+                            </div>
+                            
+                            <div class="table-body">
+                                <div class="table-th">
+                                    <img src="images/meeting-table-th.png" alt="">
+                                </div>
+                                <div class="table-td open">
+                                    <img src="images/meeting-table-td1.png" alt="">
+                                    <img src="images/next-arrow.png" class="arrow" alt="">
+                                </div>
+                                <div class="table-td">
+                                    <img src="images/meeting-table-td2.png" alt="">
+                                    <img src="images/next-arrow.png" class="arrow" alt="">
+                                </div>
+                                <div class="table-td">
+                                    <img src="images/meeting-table-td3.png" alt="">
+                                    <img src="images/next-arrow.png" class="arrow" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--以上是会议-->
+                    
+                    <div class="swiper-slide register-slide">
+                        
+                        <div class="page-main">
+                            <div class="page-head">
+                                <div class="title">
+                                    <img src="images/register-title.png" alt="">
+                                </div>
+                                <div class="sub">
+                                    <img src="images/register-sub.png" alt="">
+                                </div>
+                            </div>
+                            <div class="register">
+                                <div class="form-item">
+                                    <div class="item-content">
+                                        <input type="text" class="form-control" name="name" placeholder="点击输入姓名" id="name" >
+                                        <div class="adorn">
+                                            <img src="images/form-adorn.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-item">
+                                    <div class="item-content">
+                                        <input type="number" class="form-control" name="mobile" placeholder="输入手机号码" id="mobile" >
+                                    </div>
+                                </div>
+                                
+                                <div class="btn" id="submitBtn">
+                                    <img src="images/form-btn.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--以上是登记-->
+                    
+                    <div class="swiper-slide code-slide">
+                        
+                        <div class="page-main">
+                            <div class="page-head">
+                                <div class="title">
+                                    <img src="images/code-title.png" alt="">
+                                </div>
+                                <div class="sub">
+                                    <img src="images/code-sub.png" alt="">
+                                </div>
+                            </div>
+                            <div class="qr-code">
+                                <img src="images/qr-code.png" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--二维码-->
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="down">
+            <img src="images/next-arrow.png" alt="">
+        </div>
+    </div>
+    <div id="dialog" class="dialog-wrap">
+        <div class="dialog-content">
+            <div class="dialog-icon">
+                <img src="images/dialog-icon.png" alt="">
+            </div>
+            <div class="dialog-text">
+                
+            </div>
+            <div class="dialog-btn">
+                <img src="images/dialog-btn.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

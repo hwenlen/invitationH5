@@ -1,0 +1,99 @@
+html,
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Tahoma','Microsoft YaHei','Arial','Helvetica','sans-serif'; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 1; }
+
+ul,
+ol {
+  list-style-type: none; }
+
+select,
+input,
+img {
+  vertical-align: middle;
+  outline: none; }
+
+input, textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: 'Tahoma','Microsoft YaHei','Arial','Helvetica','sans-serif'; }
+
+textarea::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #a7a7a7;
+  font-style: italic;
+  letter-spacing: 1px; }
+
+textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #a7a7a7;
+  font-style: italic;
+  letter-spacing: 1px; }
+
+textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #a7a7a7;
+  font-style: italic;
+  letter-spacing: 1px; }
+
+textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #a7a7a7;
+  font-style: italic;
+  letter-spacing: 1px; }
+
+input::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #c0c0c0; }
+
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #c0c0c0; }
+
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #c0c0c0; }
+
+input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #c0c0c0; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  background: #fff; }
+
+img {
+  display: block; }
+
+button {
+  outline: none; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.animated {
+  opacity: 0 !important; }

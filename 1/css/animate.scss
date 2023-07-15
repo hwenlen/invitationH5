@@ -1,0 +1,292 @@
+@keyframes ArrowSlow {
+    0% {
+        transform: translateY(0.08rem);
+    }
+    50% {
+        transform: translateY(-0.08rem);
+    }
+    100% {
+        transform: translateY(0.08rem);
+    }
+}
+
+@keyframes ArrowSlow2 {
+    0% {
+        transform: translateY(0.03rem);
+    }
+    50% {
+        transform: translateY(-0.03rem);
+    }
+    100% {
+        transform: translateY(0.03rem);
+    }
+}
+
+@keyframes Rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes Twinkle {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes aniLight {
+    0% {
+        background-image: url(../images/bg/anibg/anibg2.png);
+    }
+    1.25% {
+        background-image: url(../images/bg/anibg/anibg4.png);
+    }
+    2.5% {
+        background-image: url(../images/bg/anibg/anibg6.png);
+    }
+    3.75% {
+        background-image: url(../images/bg/anibg/anibg8.png);
+    }
+    5% {
+        background-image: url(../images/bg/anibg/anibg10.png);
+    }
+    6.25% {
+        background-image: url(../images/bg/anibg/anibg12.png);
+    }
+    7.5% {
+        background-image: url(../images/bg/anibg/anibg14.png);
+    }
+    8.75% {
+        background-image: url(../images/bg/anibg/anibg16.png);
+    }
+    10% {
+        background-image: url(../images/bg/anibg/anibg18.png);
+    }
+    11.25% {
+        background-image: url(../images/bg/anibg/anibg20.png);
+    }
+    12.5% {
+        background-image: url(../images/bg/anibg/anibg22.png);
+    }
+    13.75% {
+        background-image: url(../images/bg/anibg/anibg24.png);
+    }
+    15% {
+        background-image: url(../images/bg/anibg/anibg26.png);
+    }
+    16.25% {
+        background-image: url(../images/bg/anibg/anibg28.png);
+    }
+    17.5% {
+        background-image: url(../images/bg/anibg/anibg30.png);
+    }
+    18.75% {
+        background-image: url(../images/bg/anibg/anibg32.png);
+    }
+    20%{
+        background-image: url(../images/bg/anibg/anibg34.png);
+    }
+    21.25% {
+        background-image: url(../images/bg/anibg/anibg36.png);
+    }
+    22.5% {
+        background-image: url(../images/bg/anibg/anibg38.png);
+    }
+    23.75% {
+        background-image: url(../images/bg/anibg/anibg40.png);
+    }
+    25% {
+        background-image: url(../images/bg/anibg/anibg42.png);
+    }
+    26.25% {
+        background-image: url(../images/bg/anibg/anibg44.png);
+    }
+    27.5% {
+        background-image: url(../images/bg/anibg/anibg46.png);
+    }
+    28.75% {
+        background-image: url(../images/bg/anibg/anibg48.png);
+    }
+    30% {
+        background-image: url(../images/bg/anibg/anibg50.png);
+    }
+    31.25% {
+        background-image: url(../images/bg/anibg/anibg52.png);
+    }
+    32.5% {
+        background-image: url(../images/bg/anibg/anibg54.png);
+    }
+    33.75% {
+        background-image: url(../images/bg/anibg/anibg56.png);
+    }
+    35% {
+        background-image: url(../images/bg/anibg/anibg58.png);
+    }
+    36.25% {
+        background-image: url(../images/bg/anibg/anibg60.png);
+    }
+    37.5% {
+        background-image: url(../images/bg/anibg/anibg62.png);
+    }
+    38.75% {
+        background-image: url(../images/bg/anibg/anibg64.png);
+    }
+    40% {
+        background-image: url(../images/bg/anibg/anibg66.png);
+    }
+    41.25% {
+        background-image: url(../images/bg/anibg/anibg68.png);
+    }
+    42.5% {
+        background-image: url(../images/bg/anibg/anibg70.png);
+    }
+    43.75% {
+        background-image: url(../images/bg/anibg/anibg72.png);
+    }
+    45% {
+        background-image: url(../images/bg/anibg/anibg74.png);
+    }
+    46.25% {
+        background-image: url(../images/bg/anibg/anibg76.png);
+    }
+    47.5% {
+        background-image: url(../images/bg/anibg/anibg78.png);
+    }
+    48.75% {
+        background-image: url(../images/bg/anibg/anibg80.png);
+    }
+    50% {
+        background-image: url(../images/bg/anibg/anibg82.png);
+    }
+    51.25% {
+        background-image: url(../images/bg/anibg/anibg84.png);
+    }
+    52.5% {
+        background-image: url(../images/bg/anibg/anibg86.png);
+    }
+    53.75% {
+        background-image: url(../images/bg/anibg/anibg87.png);
+    }
+    55% {
+        background-image: url(../images/bg/anibg/anibg90.png);
+    }
+    56.75% {
+        background-image: url(../images/bg/anibg/anibg92.png);
+    }
+    57.5% {
+        background-image: url(../images/bg/anibg/anibg94.png);
+    }
+    58.75% {
+        background-image: url(../images/bg/anibg/anibg96.png);
+    }
+    60% {
+        background-image: url(../images/bg/anibg/anibg98.png);
+    }
+    61.25% {
+        background-image: url(../images/bg/anibg/anibg100.png);
+    }
+    62.5% {
+        background-image: url(../images/bg/anibg/anibg102.png);
+    }
+    63.75% {
+        background-image: url(../images/bg/anibg/anibg104.png);
+    }
+    65% {
+        background-image: url(../images/bg/anibg/anibg106.png);
+    }
+    66.25% {
+        background-image: url(../images/bg/anibg/anibg108.png);
+    }
+    67.5% {
+        background-image: url(../images/bg/anibg/anibg110.png);
+    }
+    68.75% {
+        background-image: url(../images/bg/anibg/anibg112.png);
+    }
+    70% {
+        background-image: url(../images/bg/anibg/anibg114.png);
+    }
+    71.25% {
+        background-image: url(../images/bg/anibg/anibg116.png);
+    }
+    72.5% {
+        background-image: url(../images/bg/anibg/anibg118.png);
+    }
+    73.75% {
+        background-image: url(../images/bg/anibg/anibg120.png);
+    }
+    75% {
+        background-image: url(../images/bg/anibg/anibg122.png);
+    }
+    76.25% {
+        background-image: url(../images/bg/anibg/anibg124.png);
+    }
+    77.5% {
+        background-image: url(../images/bg/anibg/anibg126.png);
+    }
+    78.75% {
+        background-image: url(../images/bg/anibg/anibg128.png);
+    }
+    80% {
+        background-image: url(../images/bg/anibg/anibg130.png);
+    }
+    81.25% {
+        background-image: url(../images/bg/anibg/anibg132.png);
+    }
+    82.5% {
+        background-image: url(../images/bg/anibg/anibg134.png);
+    }
+    83.75% {
+        background-image: url(../images/bg/anibg/anibg136.png);
+    }
+    85% {
+        background-image: url(../images/bg/anibg/anibg138.png);
+    }
+    86.25% {
+        background-image: url(../images/bg/anibg/anibg140.png);
+    }
+    87.5% {
+        background-image: url(../images/bg/anibg/anibg142.png);
+    }
+    88.75% {
+        background-image: url(../images/bg/anibg/anibg144.png);
+    }
+    90% {
+        background-image: url(../images/bg/anibg/anibg146.png);
+    }
+    91.25% {
+        background-image: url(../images/bg/anibg/anibg148.png);
+    }
+    93.75% {
+        background-image: url(../images/bg/anibg/anibg150.png);
+    }
+    95% {
+        background-image: url(../images/bg/anibg/anibg152.png);
+    }
+    96.25% {
+        background-image: url(../images/bg/anibg/anibg154.png);
+    }
+    97.5% {
+        background-image: url(../images/bg/anibg/anibg156.png);
+    }
+    98.75% {
+        background-image: url(../images/bg/anibg/anibg158.png);
+    }
+    100% {
+        background-image: url(../images/bg/anibg/anibg160.png);
+    }
+}

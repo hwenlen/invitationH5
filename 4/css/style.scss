@@ -1,0 +1,631 @@
+@import 'animate.scss';
+@import 'slide-active.scss';
+
+/*以上是动画设置*/
+html,
+body {
+    height: 100%;
+    color: #333;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg.jpg) no-repeat center/cover;
+}
+audio {
+    opacity: 0;
+    visibility: hidden;
+}
+.page-conteiner {
+    height: 100%;
+}
+.tip-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    height: 100%;
+    background-color: #000;
+    .tip {
+        width: 88%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+.swiper-slide {
+    overflow: hidden;
+}
+.hints {
+    width: 1.25rem;
+    height: 1.10rem;
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0.5rem;
+    z-index: 1000;
+    opacity: 0;
+    &.active {
+        transition: 0.4s;
+        opacity: 1;
+        .hint-1 {
+            animation: hintAni 1.6s 0.4s ease-out infinite;
+        }
+    }
+    img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+    .hint-1 {
+        top: 0.1rem;
+    }
+}
+.start {
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    img {
+        width: auto;
+        height: 120%;
+        position: relative;
+        top: -10%;
+    }
+}
+.imprint {
+    position: absolute;
+    overflow: hidden;
+    max-height: 0;
+    &.bot-to-top {
+        img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    .inner {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        max-height: 0;
+        overflow: hidden;
+    }
+}
+/*loading*/
+.loading-slide {
+    .load-main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1.80rem;
+        height: 1.80rem;
+        transform: translate(-48%,-50%) rotate(90deg);
+        p {
+            font-size: 0.38rem;
+            color: #0e050a;
+            text-align: center;
+            padding-top: 0.22rem;
+        }
+    }
+    .img-wrap {
+        width: 1.80rem;
+        height: 1.80rem;
+        position: relative;
+        animation: Rotate 1.2s linear infinite;
+    }
+
+    .img-box {
+        width: 1.80rem;
+        height: 1.80rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 50%;
+        img {
+            width: 1.80rem;
+            height: 1.80rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    .loading-end {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        opacity: 0;
+        &.active {
+            opacity: 1;
+        }
+        &.hide {
+            transition: all 3.8s;
+            opacity: 0 !important;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+/*首页*/
+.index-slide {
+    .text-wrap {
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 50;
+    }
+    .text-box {
+        position: relative;
+        width: 100%;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            opacity: 0;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+            animation-duration: 0.6s;
+        }
+    }
+    .text-1 {
+        top: 1.15rem;
+        padding-bottom: 0.03rem;
+        .text-bg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .text-box {
+            height: 0.56rem;
+        }
+    }
+    .text-2 {
+        top: 25.6vh;
+        padding-bottom: 0.40rem;
+        .text-bg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .text-box {
+            height: 0.55rem;
+            &:last-child{
+                height: 0.56rem;
+            }
+        }
+    }
+    .text-3 {
+        top: 45vh;
+        padding-bottom: 0.48rem;
+        .text-bg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .text-box {
+            height: 0.45rem;
+            &:last-child{
+                height: 0.42rem;
+            }
+        }
+    }
+    .text-4 {
+        top: 64vh;
+        padding-top: 0.07rem;
+        .text-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .text-box {
+            height: 0.62rem;
+            &:last-child{
+                height: 0.59rem;
+            }
+        }
+    }
+    .text-5 {
+        bottom: 0.72rem;
+        padding-top: 0.21rem;
+        .text-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .text-box {
+            height: 0.44rem;
+            &:nth-last-child(2){
+                height: 0.53rem;
+            }
+            &:last-child{
+                height: 0.54rem;
+            }
+        }
+    }
+    .letter-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        .letter {
+            position: absolute;
+            &.active {
+                transition: all 1.6s;
+            }
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            &.letter-1 {
+                width: 2.27rem;
+                height: 1.92rem;
+                top: 0.76rem;
+                left: 4.4rem;
+                &.active{
+                    top: 20.6vh;
+                    left: 2.88rem;
+                }
+            }
+            &.letter-2 {
+                width: 2.24rem;
+                height: 1.78rem;
+                top: 24.1vh;
+                left: 1.33rem;
+                &.active{
+                    top: 31.2vh;
+                    left: 2.89rem;
+                }
+            }
+            &.letter-3 {
+                width: 2.11rem;
+                height: 1.48rem;
+                top: 43.8vh;
+                left: 4.29rem;
+                &.active{
+                    top: 44.5vh;
+                    left: 2.96rem;
+                }
+            }
+            &.letter-4 {
+                width: 2.22rem;
+                height: 1.37rem;
+                top: 68.2vh;
+                left: 0.37rem;
+                &.active{
+                    top: 55.6vh;
+                    left: 2.97rem;
+                }
+            }
+            &.letter-5 {
+                width: 2.27rem;
+                height: 1.92rem;
+                bottom: 0.82rem;
+                left: 4.59rem;
+                &.active{
+                    top: 66.9vh;
+                    bottom: auto;
+                    left: 2.88rem;
+                }
+            }
+            
+        }
+    }
+    .big-title {
+        width: 0.59rem;
+        height: 7.91rem;
+        position: absolute;
+        left: 2.14rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+/*第一页*/
+.one-slide {
+    .imprint{
+        img {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    .imprint {
+        width: 2.69rem;
+        height: 4rem;
+        top: 0;
+        right: 0.74rem;
+        z-index: 100;
+    }
+    .city {
+        width: 100%;
+        height: 7.35rem;
+        position: absolute;
+        top: -100%;
+        left: 0;
+    }
+    .text-hd {
+        width: 100%;
+        height: 0.41rem;
+        position: absolute;
+        bottom: 0.73rem;
+        left: 0;
+        z-index: 50;
+        opacity: 0;
+    }
+    .text-box {
+        width: 100%;
+        position: absolute;
+        bottom: 1.63rem;
+        left: 0;
+        z-index: 50;
+        font-size: 0;
+        .text {
+            margin-top: 0.25rem;
+            position: relative;
+            opacity: 0;
+        }
+    }
+    .lnk {
+        width: 10.68rem;
+        height: 6.0rem;
+        position: absolute;
+        right: -4.1rem;
+        bottom: -5.2rem;
+        transform: rotateZ(62deg);
+        opacity: 0;
+    }
+}
+/*第二页*/
+.two-slide {
+    .imprint {
+        width: 100%;
+        height: 4.48rem;
+        position: absolute;
+        bottom: 0.36rem;
+        left: 50%;
+        transform: translate(-50%);
+        img {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    .title {
+        width: 0.52rem;
+        height: 2.39rem;
+        position: absolute;
+        top: 0.82rem;
+        right: 0.75rem;
+    }
+    .lnk {
+        width: 10.68rem;
+        height: 6.0rem;
+        position: absolute;
+        top: -0.2rem;
+        right: -7.4rem;
+        opacity: 0;
+    }
+    .schedule {
+        width: 4.81rem;
+        height: 6.49rem;
+        position: absolute;
+        top: 1.29rem;
+        left: 0.70rem;
+        z-index: 200;
+        img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            opacity: 0;
+        }
+    } 
+    .hints {
+        left: 0.3rem;
+    }
+}
+/*第三页*/
+.three-slide {
+    .imprint {
+        width: 2.58rem;
+        height: 9.01rem;
+        top: 0;
+        left: 0;
+        max-height: 100vh;
+    }
+    .map {
+        width: 3.17rem;
+        height: 4.66rem;
+        position: absolute;
+        top: 1.03rem;
+        left: 2.25rem;
+    }
+    .text {
+        width: 3.09rem;
+        position: absolute;
+        top: 6.18rem;
+        left: 2.29rem;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+    }
+    .title {
+        width: 1.29rem;
+        height: 3.43rem;
+        position: absolute;
+        bottom: 0.57rem;
+        right: 0.72rem;
+    }
+    .city {
+        width: 100%;
+        height: 4.27rem;
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+    }
+    .hints {
+        bottom: 1rem;
+        left: 1.6rem;
+    }
+}
+
+.last-slide {
+    .imprint {
+        width: 100%;
+        position: absolute;
+        max-height: 0;
+        &.one {
+            height: 5.17rem;
+            top: 1.94rem;
+            right: 0;
+        }
+        &.two {
+            height: 3.28rem;
+            bottom: 0;
+            left: 0;
+        }
+        &.three {
+            height: 9.17rem;
+            top: 0;
+            left: 0;
+            max-height: 100vh;
+        }
+    }
+    .title {
+        width: 100%;
+        height: 6.8rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 100;
+        transform: translate(-50%,-50%);
+    }
+    .logo{
+        width: 0.94rem;
+        height: 2.49rem;
+        position: absolute;
+        right: 0.4rem;
+        bottom: 0.58rem;
+    }
+}
+
+
+@media screen and (max-height: 640px) {
+    .one-slide {
+        .text-box {
+            bottom: 1.6rem;
+            .text {
+                margin-top: 0.20rem;
+            }
+        }
+        .imprint {
+            top: -0.4rem;
+        }
+    }
+    .two-slide {
+        .imprint {
+            width: 90%;
+            bottom: 0.2em;
+        }
+        .schedule {
+            top: 0.8rem;
+        }
+    }
+    .three-slide {
+        .map {
+            top: 0.6rem;
+        }
+        .text {
+            width: 2.8rem;
+            top: 5.75rem;
+            left: 2.44rem;
+        }
+    }
+    .last-slide {
+        .imprint {
+            width: 100%;
+            position: absolute;
+            &.one {
+                top: 1.60rem;
+            }
+        }
+        .title {
+            width: 90%;
+            height: 6.12rem;
+        }
+    }
+}
+
+@media screen and (max-height: 690px) and (min-width: 404px) {
+    .one-slide {
+        .text-box {
+            bottom: 1.6rem;
+            .text {
+                margin-top: 0.20rem;
+            }
+        }
+        .imprint {
+            top: -0.4rem;
+        }
+    }
+    .two-slide {
+        .imprint {
+            width: 90%;
+            bottom: 0.2em;
+        }
+        .schedule {
+            top: 0.8rem;
+        }
+    }
+    .three-slide {
+        .map {
+            top: 0.6rem;
+        }
+        .text {
+            width: 2.8rem;
+            top: 5.75rem;
+            left: 2.44rem;
+        }
+    }
+    .last-slide {
+        .imprint {
+            width: 100%;
+            position: absolute;
+            &.one {
+                top: 1.60rem;
+            }
+        }
+        .title {
+            width: 90%;
+            height: 6.12rem;
+        }
+    }
+}
+
+@media screen and (orientation: portrait) {
+    #tips {
+        display: none;
+    }
+} 
+@media screen and (orientation: landscape) {
+    #tips {
+        display: block;
+    }
+}

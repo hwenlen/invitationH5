@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750,user-scalable=no">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>2020瑞蓝唯缇</title>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/qrcode.min.js"></script>
+    <script src="js/html2canvas.js"></script>
+    <script src="js/iscroll-zoom.js"></script>
+    <script src="js/hammer.js"></script>
+    <script src="js/lrz.all.bundle.js"></script>
+    <script src="js/PhotoClip.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!--相框1-->
+                <div class="swiper-slide framedBox1" id="framedBox1">
+                    <div class="bg1"></div>
+                    <div class="bg2"></div>
+                    <div class="bg3"></div>
+                    <div class="bg4"></div>
+                    <img src="images/framed1-logo.png" class="framed-logo" alt="">
+                    <div class="framed-body">
+                        <div class="framed" id="framed1"></div>
+                        <img src="images/framed1-mask1.png" class="framed-mask1" alt="">
+                        <img src="images/framed1-mask2.png" class="framed-mask2" alt="">
+                        <img src="images/framed1-title.png" class="framed-title" alt="">
+                    </div>
+                    <div class="framed-name">高峻纬</div>
+                    
+                    <div class="framed-foot">
+                        <div class="qr-code-box">
+                            <div class="qr-code" id="qrCode1"></div>
+                            <p>长按识别二维码进入邀请函</p>
+                        </div>
+                    </div>
+                    <!--用以显示长按下载的图片 -->
+                    <img src="" alt="" class="down-img down-img-1">
+                </div>
+                <!--相框2-->
+                <div class="swiper-slide framedBox2" id="framedBox2">
+                    <div class="framed-body">
+                        <img src="images/framed2-title.png" class="framed-title" alt="">
+                        <div class="framed" id="framed2"></div>
+                        <h2 class="framed-name">高峻纬</h2>
+                    </div>
+                    <div class="framed-foot">
+                        <img src="images/framed2-logo.png" class="framed-logo" alt="">
+                        <div class="qr-code-box">
+                            <div class="qr-code" id="qrCode2"></div>
+                            <p>长按识别二维码进入邀请函</p>
+                        </div>
+                        <div class="adorn"></div>
+                    </div>
+                    <!--用以显示长按下载的图片 -->
+                    <img src="" alt="" class="down-img down-img-2">
+                </div>
+                <!--相框3-->
+                <div class="swiper-slide framedBox3" id="framedBox3">
+                    <img src="images/framed3-logo.png" class="framed-logo" alt="">
+                    <div class="framed-body">
+                        <div class="framed" id="framed3"></div>
+                        <img src="images/framed3-adorn1.png" class="framed-adorn1" alt="">
+                        <img src="images/framed3-title.png" class="framed-title" alt="">
+                        <h2 class="framed-name">高峻纬</h2>
+                    </div>
+                    <div class="framed-foot">
+                        <img src="images/framed3-adorn2.png" class="framed-adorn2" alt="">
+                        <div class="qr-code-box">
+                            <p>长按识别二维码<br />进入邀请函</p>
+                            <div class="qr-code" id="qrCode3"></div>
+                        </div>
+                    </div>
+                    <!--用以显示长按下载的图片 -->
+                    <img src="" alt="" class="down-img down-img-3">
+                </div>
+                <!--相框4-->
+                <div class="swiper-slide framedBox4" id="framedBox4">
+                    <div class="framed-head"></div>
+                    <div class="framed-logo">
+                        <img src="images/framed4-logo.png" alt="">
+                    </div>
+                    <div class="framed-body">
+                        <h2 class="framed-name">高峻纬</h2>
+                        <div class="framed" id="framed4"></div>
+                        <img src="images/framed4-adorn.png" class="framed-adorn" alt="">
+                        <img src="images/framed4-adorn2.png" class="framed-adorn2" alt="">
+                        <img src="images/framed4-title.png" class="framed-title" alt="">
+                    </div>
+                    <div class="framed-foot">
+                        <div class="qr-code-box">
+                            <div class="qr-code" id="qrCode4"></div>
+                            <p>长按识别二维码进入邀请函</p>
+                        </div>
+                    </div>
+                    <!--用以显示长按下载的图片 -->
+                    <img src="" alt="" class="down-img down-img-4">
+                </div>
+                
+            </div>
+        </div>
+        <!--上传照片按钮-->
+        <div class="file-btn-box">
+            <div class="file-btn" id="fileBtn">
+                <img src="images/up-btn.png" alt="">
+            </div>
+        </div>
+        
+        <input type="file" id="file" style="display: none;" accept="image/jpeg, image/x-png, image/png">
+        
+        <div id="clipArea_box">
+            <div id="clipArea"></div>
+            <button id="clipBtn">截取</button>
+            <div id="view" style="display: none;"></div>
+        </div>
+    </div>
+    <script src="../js/common.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

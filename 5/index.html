@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750,user-scalable=no">
+    <link rel="stylesheet" href="css/reset.css?v=10">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css?v=10">
+    <title>2020默沙东第一届DTP创新论坛</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div id="loading">
+            <img src="images/scroll-frame.png" alt="" class="divhidden">
+            <img src="images/bg.jpg" alt="" class="divhidden">
+            <img src="images/loading-img1.png" alt="" class="img1">
+            <img src="images/loading-img2.png" alt="" class="img2">
+            <img src="images/loading-img3.png" alt="" class="img3">
+            <div class="scroll-light">
+                <img src="images/scroll-light.png" alt="">
+            </div>
+        </div>
+        <!--背景音乐-->
+        <audio src="music/bg.mp3" id="BGM" loop="loop" class="divhidden"></audio>
+        
+        <!--提示不可转屏-->
+        <div class="tip-box" id="tips">
+            <div class="tip">
+                <img src="images/tip-icon.png" alt="">
+            </div>
+        </div>
+        
+        <div class="hints">
+            <img src="images/hint-hand.png" class="hint-1" alt="">
+            <img src="images/hint-dir.png" class="hint-2" alt="">
+        </div>
+
+        <div class="main">
+            <div class="painted-scroll painted-head">
+                <div class="figure">
+                    <img src="images/scroll-figure.png" alt="">
+                </div>
+                <div class="audio-btn rotate360 play"></div>
+            </div>
+            <div class="painted-scroll painted-footer">
+                <div class="figure">
+                    <img src="images/scroll-figure.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="aid-kit">
+                                <img src="images/aid-kit.png" alt="">
+                            </div>
+                            <div class="page page-1">
+                            <div class="page-bg">
+                                <img src="images/p1/bg.jpg" alt="">
+                            </div>
+                            <img src="images/p1/ship.png" alt="" class="ship">
+                            <img src="images/p1/light.png" alt="" class="light">
+                            <div class="page-content">
+                                <img src="images/p1/logo.png" alt="" class="logo">
+                                <div class="letter letter-1 animated">
+                                    <div class="letter-img">
+                                        <img src="images/p1/letter-1.png" class="l1" alt="">
+                                        <img src="images/p1/letter-1-2.png" class="l2" alt="">
+                                    </div>
+                                    <div class="txt">
+                                        <img src="images/p1/letter-1-text.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="letter letter-2 animated">
+                                    <div class="letter-img">
+                                        <img src="images/p1/letter-2.png" class="l1" alt="">
+                                        <img src="images/p1/letter-2-2.png" class="l2" alt="">
+                                    </div>
+                                    <div class="txt">
+                                        <img src="images/p1/letter-2-text.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="letter letter-3 animated">
+                                    <div class="letter-img">
+                                        <img src="images/p1/letter-3.png" class="l1" alt="">
+                                        <img src="images/p1/letter-3-2.png" class="l2" alt="">
+                                    </div>
+                                    <div class="txt">
+                                        <img src="images/p1/letter-3-text.png" alt="">
+                                    </div>
+                                </div>
+                                <img src="images/loading-img3.png" alt="" class="title animated">
+                            </div>
+                        </div>
+                        <div class="page page-2">
+                            <div class="page-bg">
+                                <img src="images/p2/bg.jpg" alt="">
+                            </div>
+                            <div class="page-content">
+                                <img src="images/p2/img1.png" alt="" class="p2-1">
+                                <div class="p2-c1">
+                                    <img src="images/p2/ic1.png" alt="">
+                                </div>
+                                <div class="p2-c2">
+                                    <img src="images/p2/ic2.png" alt="">
+                                </div>
+                                <div class="p2-c3">
+                                    <img src="images/p2/ic3.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <img src="images/p2/text1.png" alt="" class="text1 animated">
+                                    <img src="images/p2/text2.png" alt="" class="text2 animated">
+                                    <img src="images/p2/text3.png" alt="" class="text3 animated">
+                                    <img src="images/p2/text4.png" alt="" class="text4 animated">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page page-3">
+                            <div class="page-bg">
+                                <img src="images/p3/bg.jpg" alt="">
+                            </div>
+                            <img src="images/p3/ship.png" alt="" class="ship animated">
+                            <img src="images/p3/light.png" alt="" class="light">
+                            <div class="page-content">
+                                <div class="text">
+                                    <img src="images/p3/text1.png" alt="" class="text1 animated">
+                                    <img src="images/p3/text2.png" alt="" class="text2 animated">
+                                    <img src="images/p3/text3.png" alt="" class="text3 animated">
+                                    <img src="images/p3/text4.png" alt="" class="text4 animated">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page page-4">
+                            <div class="page-bg">
+                                <img src="images/p4/bg.jpg" alt="">
+                            </div>
+                            <div class="page-content">
+                                <img src="images/p4/title.png" alt="" class="title animated">
+                                <img src="images/p4/schedule.png" alt="" class="schedule animated">
+                            </div>
+                        </div>
+                        <div class="page page-5">
+                            <div class="page-bg">
+                                <img src="images/p5/bg.jpg" alt="">
+                            </div>
+                            <div class="page-content">
+                                <div class="text">
+                                    <img src="images/p5/text1.png" alt="" class="text1 animated">
+                                    <img src="images/p5/text2.png" alt="" class="text2 animated">
+                                    <img src="images/p5/text3.png" alt="" class="text3 animated">
+                                    <img src="images/p5/text4.png" alt="" class="text4 animated">
+                                    <img src="images/p5/text5.png" alt="" class="text5 animated">
+                                    <img src="images/p5/text6.png" alt="" class="text6 animated">
+                                    <img src="images/p5/text7.png" alt="" class="text7 animated">
+                                </div>
+                                <img src="images/p5/addr-icon.png" alt="上海" class="addr-icon addr-icon1 animated">
+                                <img src="images/p5/addr-icon.png" alt="成都" class="addr-icon addr-icon2 animated">
+                                <img src="images/p5/addr-icon.png" alt="合肥" class="addr-icon addr-icon3 animated">
+                                <img src="images/p5/addr-icon.png" alt="杭州" class="addr-icon addr-icon4 animated">
+                                <img src="images/p5/addr-icon.png" alt="深圳" class="addr-icon addr-icon5 animated">
+                                <img src="images/p5/addr-icon.png" alt="北京" class="addr-icon addr-icon6 animated">
+                                <img src="images/p5/addr-icon.png" alt="长沙" class="addr-icon addr-icon7 animated">
+                            </div>
+                        </div>
+                        <div class="page page-6">
+                            <div class="page-bg">
+                                <img src="images/p6/bg.jpg" alt="">
+                            </div>
+                            <img src="images/p6/ship.png" alt="" class="ship">
+                            <img src="images/p6/light.png" alt="" class="light">
+                            <div class="page-content">
+                                <img src="images/p6/title.png" alt="" class="title animated">
+                                <img src="images/p6/text.png" alt="" class="txt animated">
+                                <img src="images/p6/fingerprint.png" alt="" class="fingerprint animated">
+                                <img src="images/p6/seal.png" alt="" class="seal animated">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+        
+        <div class="popup-box">
+            <div class="popup">
+                <img src="images/p6/fingerprint-popup.png" alt="">
+                <div class="fingerprint-btn"></div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="js/index.js?v=10"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?39ad11f1fd8303a6ea3a68d2a87c13d7";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</body>
+
+</html>

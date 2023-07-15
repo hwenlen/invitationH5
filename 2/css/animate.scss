@@ -1,0 +1,329 @@
+/*底部轻轨*/
+@keyframes lightRail{
+    0% {
+        left: -311px;
+        bottom: 546px;
+    }
+    100% {
+        left: 750px;
+        bottom: -68px;
+    }
+}
+
+/*寄语展示飞行动画*/
+@keyframes seeWordFly{
+    0% {
+        top: 460px;
+    }
+    100% {
+        top: 468px;
+    }
+}
+
+/*云展馆*/
+@keyframes areaTitle{
+    0% {
+        bottom: 16px;
+    }
+    100% {
+        bottom: 26px;
+    }
+}
+
+/*page2下的悬浮形状*/
+@keyframes shape{
+    0% {
+        top: 232px;
+    }
+    100% {
+        top: 218px;
+    }
+}
+
+/*火柴人和飞机对话动画*/
+@keyframes TextShow{
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/*飞机飞行动画*/
+@keyframes aircraft{
+    0% {
+        top: -215px;
+        right: 750px;
+    }
+    
+    80% {
+        top: 688px;
+        right: -225px;
+    }
+    
+    100% {
+        top: 688px;
+        right: -225px;
+    }
+}
+
+/*火柴人1动画*/
+@keyframes People1{
+    0% {
+        left: 266px;
+        top: 528px;
+        transform: scaleX(1);
+    }
+    49.9% {
+        
+        transform: scaleX(1);
+    }
+    50% {
+        left: 562px;
+        top: 488px;
+        transform: scaleX(-1);
+    }
+    99.9% {
+        transform: scaleX(-1);
+    }
+    100% {
+        left: 266px;
+        top: 528px;
+        transform: scaleX(1);
+    }
+}
+
+/*火柴人4动画*/
+@keyframes People4{
+    0% {
+        left: 750px;
+        bottom: 204px;
+    }
+    70% {
+        left: 208px;
+        bottom: 164px;
+    }
+    100% {
+        left: -22px;
+        bottom: 164px;
+    }
+}
+
+/*火柴人5动画*/
+@keyframes People5{
+    0% {
+        left: 750px;
+        bottom: 26px;
+    }
+    100% {
+        left: -16px;
+        bottom: 380px;
+    }
+}
+
+/*火柴人5-2动画*/
+@keyframes People5-2{
+    0% {
+        right: -19px;
+        bottom: 282px;
+    }
+    100% {
+        right: 750px;
+        bottom: 145px;
+    }
+}
+
+/*火柴人6动画*/
+@keyframes People6{
+    0% {
+        right: -28px;
+        bottom: 50px;
+    }
+    100% {
+        right: 750px;
+        bottom: -120px;
+    }
+}
+
+/*火柴人8动画*/
+@keyframes People8{
+    0% {
+        right: -28px;
+        top: 198px;
+        display: block;
+    }
+    99.9% {
+        right: 616px;
+        top: 332px;
+        display: block;
+    }
+    100% {
+        right: 616px;
+        top: 332px;
+        display: none;
+    }
+}
+
+/*火柴人9动画*/
+@keyframes People9{
+    0% {
+        right: -34px;
+        top: 46px;
+        display: block;
+    }
+    99.9% {
+        right: 616px;
+        top: 332px;
+        display: block;
+    }
+    100% {
+        right: 616px;
+        top: 332px;
+        display: none;
+    }
+}
+
+/*火柴人10动画*/
+@keyframes People10{
+    0% {
+        left: 23px;
+        top: 292px;
+        transform: scaleX(1);
+    }
+    20% {
+        left: 83px;
+        top: 363px;
+    }
+    49.9% {
+        transform: scaleX(1);
+    }
+    50% {
+        left: 215px;
+        top: 428px;
+        transform: scaleX(-1);
+    }
+    70% {
+        left: 83px;
+        top: 363px;
+    }
+    99.9% {
+        transform: scaleX(-1);
+    }
+    100% {
+        left: 23px;
+        top: 292px;
+        transform: scaleX(1);
+    }
+}
+
+/*火柴人11动画*/
+@keyframes People11{
+    0% {
+        left: 271px;
+        top: 413px;
+        transform: scaleX(1);
+    }
+    39.9% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+    40% {
+        left: 131px;
+        top: 346px;
+        transform: scaleX(-1);
+        opacity: 0;
+    }
+    59.9% {
+        opacity: 0;
+    }
+    60% {
+        left: 131px;
+        top: 346px;
+        opacity: 1;
+    }
+    99.9% {
+        transform: scaleX(-1);
+    }
+    100% {
+        left: 271px;
+        top: 413px;
+        transform: scaleX(1);
+    }
+}
+
+
+/*火柴人13动画*/
+@keyframes People13{
+    0% {
+        left: -21px;
+        bottom: 188px;
+    }
+    13% {
+        left: 102px;
+        bottom: 303px;
+    }
+    19% {
+        left: 148px;
+        bottom: 265px;
+    }
+    100% {
+        left: 750px;
+        bottom: 610px;
+    }
+}
+
+/*火柴人12和15动画*/
+@keyframes People1215{
+    0% {
+        left: -22px;
+        bottom: -44px;
+    }
+    50% {
+        left: 460px;
+        bottom: 196px;
+    }
+    100% {
+        left: 750px;
+        bottom: 548px;
+    }
+}
+
+/*火柴人20动画*/
+@keyframes People20{
+    0% {
+        left: -31px;
+        top: 216px;
+    }
+    100% {
+        left: 750px;
+        top: 712px;
+    }
+}
+/*火柴人23动画*/
+@keyframes People23{
+    0% {
+        right: -28px;
+        bottom: 304px;
+        z-index: 9;
+    }
+    59.9% {
+        z-index: 9;
+    }
+    60% {
+        right: 218px;
+        bottom: 80px;
+        z-index: 20;
+    }
+    100% {
+        right: 430px;
+        bottom: -91px;
+    }
+}

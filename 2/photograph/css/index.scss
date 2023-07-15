@@ -1,0 +1,518 @@
+html,body {
+    background-color: #f0ecdf;
+    font-family: 'Tahoma','Microsoft YaHei','Arial','Helvetica','sans-serif';
+}
+* {
+    touch-action: pan-y;
+}
+.wrap {
+    max-width: 750px;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.down-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+}
+    
+.swiper-container {
+    height: 100%;
+    .framed {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+#clipArea_box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    display: none;
+    touch-action: none;
+}
+
+#clipArea {
+    height: 100%;
+}
+
+#clipBtn {
+    position: absolute;
+    bottom: 72px;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+    height: 60px;
+    font-size: 30px;
+    color: #fff;
+    background-color: #f8a449;
+    border: none;
+}
+
+.framed-name {
+    position: absolute;
+    z-index: 10;
+    font-size: 56px;
+    letter-spacing: 6px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.framed {
+    background: url(../images/framed-photo.jpg) no-repeat center/cover;
+}
+.qr-code-box {
+    display: none;
+    .qr-code {
+        width: 113px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.file-btn-box {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2));
+    padding: 36px 0 48px;
+    .file-btn {
+        width: 317px;
+        margin: 0 auto;
+        border-radius: 45px;
+        box-shadow: 0 0 12px 8px rgba(0,0,0,0.2);
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.framedBox1 {
+    display: flex;
+    flex-direction: column;
+    .bg1,.bg2,.bg3,.bg4 {
+        position: absolute;
+    }
+    .bg1 {
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 378px;
+        background-color: #f9a549;
+    }
+    .bg2,.bg3 {
+        width: 51%;
+        height: 120px;
+        background-color: #488dd5;
+    }
+    .bg2 {
+        top: 378px;
+        left: 0;
+    }
+    .bg3 {
+        top: 378px;
+        right: 0;
+        z-index: 2;
+    }
+    .bg4 {
+        top: 498px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #f9e67e;
+    }
+    .framed-logo {
+        width: 322px;
+        position: absolute;
+        top: 26px;
+        left: 48px;
+    }
+    .framed-body {
+        width: 560px;
+        height: 970px;
+        padding: 15px;
+        border: 3px solid #000000;
+        position: absolute;
+        left: 53px;
+        top: 136px;
+        .framed {
+            height: 100%;
+            position: relative;
+            z-index: 10;
+        }
+    }
+    .framed-name {
+        height: 96px;
+        background-color: #f9a549;
+        top: 1028px;
+        right: 0;
+        z-index: 15;
+        min-width: 372px;
+        padding: 0 16px 0 56px;
+        letter-spacing: 4px;
+    }
+    .framed-title {
+        width: 185px;
+        position: absolute;
+        top: 344px;
+        right: -106px;
+        z-index: 15;
+    }
+    .framed-mask1,.framed-mask2 {
+        position: absolute;
+        width: 131px;
+        z-index: 15;
+    }
+    .framed-mask1 {
+        bottom: 694px;
+        right: -126px;
+    }
+    .framed-mask2 {
+        bottom: -29px;
+        left: -27px;
+    }
+    .framed-foot {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .qr-code-box {
+        padding-top: 56px;
+        p {
+            font-size: 20px;
+            color: #454545;
+            padding: 16px 0 24px;
+            text-align: center;
+        }
+    }
+}
+
+.framedBox2 {
+    display: flex;
+    flex-direction: column;
+    .framed-body {
+        height: 1032px;
+        border-left: 174px solid #f8a449;
+        position: relative;
+        .framed-title {
+            width: 627px;
+            position: absolute;
+            top: 67px;
+            right: 85px;
+        }
+        .framed-name {
+            min-width: 302px;
+            height: 140px;
+            font-size: 50px;
+            padding: 8px 0 0 60px;
+            background: url(../images/framed2-name-bg.png) no-repeat left top;
+            background-size: 500px 140px;
+            right: 0;
+            bottom: 74px;
+            justify-content: center;
+        }
+        .framed {
+            height: 100%;
+            img {
+                height: 100%;
+            }
+        }
+    }
+    .framed-foot {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #f9e67e;
+        padding-top: 10px;
+        position: relative;
+        .framed-logo {
+            width: 100%;
+        }
+        .qr-code-box {
+            padding-top: 24px;
+            p {
+                font-size: 20px;
+                color: #454545;
+                padding: 16px 0 24px;
+                text-align: center;
+            }
+        }
+        .adorn {
+            width: 122px;
+            height: 108px;
+            background-color: #f8a449;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+.framedBox3 {
+    background-color: #4a8bd2;
+    .framed-logo,.framed-body,.framed-adorn1,.framed-title,.framed-foot,.framed-adorn2,.qr-code-box {
+        position: absolute;
+    }
+    .framed-logo {
+        width: 275px;
+        top: 31px;
+        left: 46px;
+    }
+    .framed-body {
+        width: 612px;
+        height: 970px;
+        top: 119px;
+        left: 35px;
+    }
+    .framed {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+    }
+    .framed-adorn1 {
+        height: 1106px;
+        top: -119px;
+        right: -104px;
+    }
+    .framed-title {
+        width: 179px;
+        top: -8px;
+        right: -22px;
+    }
+    .framed-name {
+        font-weight: bold;
+        text-shadow: 5px 5px 0 #0c41a7;
+        bottom: -36px;
+        left: 50%;
+        transform: translate(-40%) rotateZ(-12deg);
+        
+    }
+    .framed-foot {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        .framed-adorn2 {
+            width: 703px;
+            left: 43px;
+            bottom: 0;
+        }
+        .qr-code-box {
+            right: 40px;
+            bottom: 36px;
+            p {
+                color: #fff;
+                display: inline-block;
+                margin-right: 10px;
+                vertical-align: middle;
+            }
+            .qr-code {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+.framedBox4 {
+    background-color: #f9e67e;
+    .framed-logo,.framed-body,.framed,.framed-name,.framed-title,.framed-adorn,.framed-adorn2,.framed-foot,.qr-code-box {
+        position: absolute;
+    }
+    .framed-head {
+        height: 182px;
+        background-color: #fff;
+    }
+    .framed-logo {
+        width: 358px;
+        height: 138px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        background-color: #f8a44b;
+        img {
+            width: 322px;
+        }
+    }
+    .framed-body {
+        top: 182px;
+        left: 0;
+        right: 0;
+    }
+    .framed-name {
+        left: 0;
+        top: -58px;
+        text-shadow: 5px 5px 0 #3d5c68;
+        background-color: rgba(248,164,75,0.5);
+        height: 198px;
+        min-width: 323px;
+        max-width: 600px;
+        z-index: 20;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 35px 10px;
+    }
+    .framed {
+        width: 593px;
+        height: 829px;
+        left: 75px;
+        top: 60px;
+        z-index: 10;
+        background-color: #fff;
+    }
+    .framed-adorn {
+        width: 430px;
+        top: 813px;
+        left: 0;
+    }
+    .framed-adorn2 {
+        width: 321px;
+        top: 32px;
+        right: 0;
+    }
+    .framed-title {
+        width: 698px;
+        top: 820px;
+        right: 0;
+        z-index: 30;
+    }
+    .framed-foot {
+        bottom: 0;
+        right: 0;
+        z-index: 40;
+        .qr-code-box {
+            width: 276px;
+            bottom: 0;
+            right: 0;
+            p {
+                color: #454545;
+                font-size: 20px;
+                padding: 15px 0 24px;
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 1280px){
+    .framedBox1 {
+        .bg1 {
+            height: 268px;
+        }
+        .bg2,.bg3 {
+            top: 268px;
+        }
+        .bg4 {
+            top: 388px;
+        }
+        .framed-body {
+            width: 496px;
+            height: 860px;
+            left: 85px;
+        }
+        .framed-name {
+            top: 918px;
+        }
+        .framed-title {
+            top: 234px;
+        }
+    }
+    .framedBox2 {
+        .framed-body {
+            height: 896px;
+            border-left: 250px solid #f8a449;
+            .framed-title {
+                width: 550px;
+                position: absolute;
+                top: 46px;
+                right: 110px;
+            }
+        }
+    }
+    
+    .framedBox3 {
+        .framed-body {
+            position: absolute;
+            width: 543px;
+            height: 860px;
+            left: 70px;
+        }
+        .framed-adorn1 {
+            height: 996px;
+            right: -92px;
+        }
+        .framed-foot {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            .framed-adorn2 {
+                width: 620px;
+            }
+        }
+    }
+    .framedBox4 {
+        .framed-body {
+            top: 170px;
+        }
+        .framed {
+            width: 507px;
+            height: 709px;
+            left: 110px;
+            top: 60px;
+        }
+        .framed-adorn {
+            width: 430px;
+            top: 693px;
+            left: 0;
+        }
+        .framed-adorn2 {
+            top: 14px;
+        }
+        .framed-title {
+            width: 698px;
+            top: 700px;
+            right: 0;
+            z-index: 30;
+        }
+    }
+}
+
+@media screen and (max-height: 1000px){
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

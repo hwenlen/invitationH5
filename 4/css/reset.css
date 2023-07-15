@@ -1,0 +1,43 @@
+html,
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 1; }
+
+ul,
+ol {
+  list-style-type: none; }
+
+select,
+input,
+img {
+  vertical-align: middle;
+  outline: none; }
+
+img {
+  width: 100%; }
+
+button {
+  outline: none; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }

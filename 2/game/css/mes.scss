@@ -1,0 +1,406 @@
+#rl-swiper{
+    // border:1px solid red;
+    box-sizing: border-box;
+    z-index: 2;
+    overflow: auto;
+}
+// 统一背景
+.mesBg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    .tBox{
+        width: 5rem;
+        height: 3rem;
+        background-color: #f9a54b;
+        position: relative;
+        z-index: 2;
+    }
+    .lBox{
+        width: 4.4rem;
+        height: calc(100vh - 3rem);
+        background-color: #f4f3f1;
+        margin-left: 0.6rem;
+    }
+    .rBox{
+        width: calc(100% - 5rem);
+        height: 100vh;
+        background-color: #fae780;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .bBox{
+        width: calc(100% - 0.8rem);
+        height: 5.5rem;
+        background-color: #f9a54b;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        p{
+            color:#fff;
+            font-size: 0.2rem;
+            letter-spacing: 0.015rem;
+            text-align: center;
+            line-height: 0.38rem;
+            padding-left: 1.2rem;
+            padding-top:0.1rem;
+            b{
+                font-size: 0.22rem;
+            }
+        }
+        
+    }
+    .trainBox{
+        // border:1px solid red;
+        position: absolute;
+        bottom: 0;
+        .way{
+            width: 6.2rem;
+        }
+        .train{
+            width: 2.78rem;
+            position: absolute;
+            bottom: 3.2rem;
+            left: -3rem;
+        }
+    }
+}
+// 公共左右分割
+.swiper-slide{
+    .cont{
+        position: relative;
+        padding-left: 0.6rem;
+        >div{
+            box-sizing: border-box;
+        }
+        ul{
+            padding-top:0.2rem;
+            li{
+                display: flex;
+                justify-content: space-between;
+                // overflow: hidden;
+                >div{
+                    // border:1px solid red;
+                    box-sizing: border-box;
+                }
+                .lBox{
+                    width: 4.4rem;
+                    // margin-left: 0.6rem;
+                }
+                .rBox{
+                    width: 2.5rem;
+                    .y{
+                        position: relative;
+                        top:0.1rem
+                    }
+                }
+            }
+        }
+        .cc{
+            font-size: 0.21rem;
+            line-height: 0.4rem;
+            color:#6f6f6f;
+            letter-spacing: 0.01rem;
+            text-align: right;
+            padding-right: 0.2rem;
+            span{
+                color:#022d72;
+                font-size: 0.32rem;
+            }
+            i{
+                font-size: 0.24rem;
+            }
+        }
+    }
+    
+}
+// 第一页
+.page0{
+    .textBox{
+        width: 100%;
+        // border:1px solid red;
+        margin-top:0.2rem;
+    }
+    ul{
+        // border:1px solid red;
+        height: 60vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    .houseBox{
+        margin-top:-0.5rem;
+        align-items: flex-end;
+        .lBox{
+            position: relative;
+            bottom: 0.4rem;
+        }
+    }
+    .tmz{
+        margin-top:0.3rem;
+    }
+    .fBox{
+        margin-top:0.3rem;
+        opacity: 0;
+        position: relative;
+        left: -0.65rem;
+    }
+
+    .tBox{
+        width: 5rem;
+        height: 3rem;
+        position: relative;
+        z-index: 2;
+        left: -0.6rem;
+        .font{
+            width: 2rem;
+            mix-blend-mode: overlay;
+            position: relative;
+            top: 0.3rem;
+            left: 0.5rem;
+        }
+        .paper{
+            width: 4.3rem;
+            position: absolute;
+            top: 0.6rem;
+            right: -1.4rem;
+            z-index: 2;
+        }
+        span{
+            width: 0.15rem;
+            height: 0.15rem;
+            border:1px solid #f1f1f1;
+            border-radius: 50%;
+            position: absolute;
+            top:0.2rem;
+            right: 1rem;
+        }
+        .notice{
+            width: 1.5rem;
+            position: absolute;
+            right: -2.3rem;
+            top: 0.2rem;
+            z-index: 1;
+            // border:1px solid red;
+        }
+    }
+    .lBox{
+        .text1{
+            position: relative;
+            left: -110%;
+        }
+        .pointHouse{
+            text-align: left;
+            margin-top: 1.8rem;
+            padding-left: 0.3rem;
+            position: relative;
+            left: -110%;
+            &::after{
+                content:"";
+                display: inline-block;
+                border-left: 0.15rem solid #f9a54b;
+                border-right: 0;
+                border-top:0.1rem solid transparent;
+                border-bottom:0.1rem solid transparent;
+                vertical-align: middle;
+                position: relative;
+                left: 0.1rem;
+            }
+        }
+        .end{
+            position: relative;
+            left: -110%;
+        }
+        
+    }
+    .rBox{
+        
+        .y1981{
+            width: 2rem;
+            position: relative;
+            left: 110%;
+        }
+        .house{
+            width: 4.1rem;
+            position: relative;
+            left: -1.63rem;
+            position: relative;
+            left: 110%;
+        }
+        .y1995{
+            width: 2rem;
+            position: relative;
+            left: 110%;
+        }
+        .fourBox{
+            width: 2.2rem;
+        }
+        .trans{
+            font-size: 0.21rem;
+            line-height: 0.4rem;
+            color:#6f6f6f;
+            letter-spacing: 0.01rem;
+            text-align: center;
+            padding-right: 0.25rem;
+            &::before{
+                content:"";
+                display: inline-block;
+                border-bottom: 0.15rem solid #f9a54b;
+                border-top: 0;
+                border-left:0.1rem solid transparent;
+                border-right:0.1rem solid transparent;
+                vertical-align: middle;
+                position: relative;
+                right: 0.1rem;
+            }
+        }
+    }
+}
+
+// 第二页
+.page1{
+    .cont{
+        // border:1px solid red;
+        height: 70vh;
+        margin-top:0.8rem;
+        .yinxiang{
+            width: 2rem;
+            height: 2.3rem;
+            margin-left: 0.2rem;
+            background:url("../img/mes/font.png")no-repeat center/100%;
+            mix-blend-mode: screen;
+            opacity: 0.3;
+            position: absolute;
+        }
+    }
+    ul{
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        li{
+            .lBox{
+                position: relative;
+                left: -110%;
+            }
+            .rBox{
+                position: relative;
+                left: 110%;
+                img{
+                    width: 2.12rem;
+                }
+            }
+            
+            .water{
+                height: 0.62rem;
+                transform: translateX(-0.2rem);
+            }
+            .zhen{
+                width: 4.3rem;
+                height: 5.46rem;
+                position: absolute;
+                bottom: 0.5rem;
+                right: -3.65rem;
+            }
+        }
+        .shuidi{
+            position: relative;
+            width: 5.75rem;
+            margin: auto;
+            opacity: 0;
+        }
+        .pda{
+            .cc{
+                position: relative;
+                img{
+                    width: 1.3rem;
+                    height: 0.53rem;
+                    position: absolute;
+                    right: 2.8rem;
+                    bottom: 0;
+                }
+            }
+        }
+        .jianguan{
+            width: 3.37rem;
+            display: inline-block;
+            margin-top:0.15rem;
+        }
+    }
+}
+// 第三页
+.page2{
+    .cont{
+        // border:1px solid red;
+        height: calc(100vh - 6.5rem);
+        margin-top:0.5rem;
+        // left: 110%;
+        .yinxiang{
+            width: 2rem;
+            height: 2.3rem;
+            margin-left: 0.2rem;
+            background:url("../img/mes/font.png")no-repeat center/100%;
+            mix-blend-mode: screen;
+            opacity: 0.3;
+            position: absolute;
+        }
+        ul{
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            li{
+                display: flex;
+                align-items: center;
+            }
+        }
+        .lBox{
+            // position: relative;
+            // left: -110%;
+            img{
+                width: 2.85rem;
+                margin: auto;
+            }
+            .greenBox{
+                width: 2.2rem;
+            }
+        }
+        .rBox{
+            // position: relative;
+            // left: 110%;
+            img{
+                width: 2.12rem;
+            }
+        }
+    }
+
+}
+@media (min-width:414px) and (max-height:675px){
+    .page0 .lBox .cc{
+        line-height: 0.35rem;
+    }
+    .page0 .rBox .house{
+        width: 3.8rem;
+        transform: translateX(0.1rem);
+    }
+    .page0 .textBox{
+        padding-top:0.2rem;
+    }
+}
+@media (max-width:375px) and (max-height:605px){
+    .page0 .lBox .cc{
+        line-height: 0.35rem;
+    }
+    .page0 .rBox .house{
+        width: 3.8rem;
+        transform: translateX(0.1rem);
+    }
+    .page0 .textBox{
+        padding-top:0.2rem;
+    }
+}

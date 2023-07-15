@@ -1,0 +1,834 @@
+@import 'animate.scss';
+
+/*以上是动画设置*/
+html,
+body {
+    background-color: #ebebeb;
+    font-family: 'Tahoma', 'Microsoft YaHei', 'Arial', 'Helvetica', 'sans-serif';
+}
+
+#wrap {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+#loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -90px;
+    width: 100%;
+    z-index: 200;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .loading-content {
+        width: 184px;
+        height: 182px;
+        position: relative;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .loading-round {
+            animation: Rotate 4s linear infinite;
+        }
+    }
+}
+
+.down-arrow {
+    width: 80px;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -40px;
+    z-index: 50;
+    opacity: 0.6;
+    animation: ArrowSlow 0.8s linear infinite alternate;
+    display: none;
+}
+
+.dialog-box {
+    width: 100%;
+    height: 100vh;
+    padding: 35px 20px 0;
+    background-color: #ebebeb;
+    position: relative;
+//    display: none;
+    .dialog {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 16px;
+
+        &.other {
+            .text {
+                background-color: #fff;
+                margin-left: 20px;
+                &:after {
+                    border-left: 10px transparent dashed;
+                    border-right: 10px #fff solid;
+                    left: -20px;
+                }
+            }
+        }
+
+        &.me {
+            flex-direction: row-reverse;
+
+            .text {
+                background: #94eb68;
+                margin-right: 20px;
+                &:after {
+                    border-right: 10px transparent dashed;
+                    border-left: 10px #94eb68 solid;
+                    right: -20px;
+                }
+            }
+        }
+
+        &.active {
+            .head-img {
+                opacity: 1;
+            }
+
+            .text {
+                animation: fadeInUp 0.3s linear forwards;
+            }
+        }
+
+        .head-img {
+            min-width: 1px;
+            width: 74px;
+            height: 74px;
+            border-radius: 4px;
+            overflow: hidden;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+
+        .text {
+            max-width: 520px;
+            padding: 18px 20px;
+            font-size: 26px;
+            line-height: 36px;
+            border-radius: 8px;
+            position: relative;
+            opacity: 0;
+            &:after {
+                content: "";
+                border-top: 9px transparent dashed;
+                border-bottom: 9px transparent dashed;
+                position: absolute;
+                top: 26px;
+            }
+            .link-logo {
+                width: 254px;
+                height: 178px;
+            }
+        }
+        #toStart {
+            padding: 0;
+            background-color: #fff;
+            position: relative;
+            z-index: 101;
+            visibility: hidden;
+            &:after {
+                border-left: 10px #fff solid;
+            }
+        }
+    }
+
+    .hand {
+        width: 124px;
+        position: absolute;
+        top: 170px;
+        right: 54px;
+        z-index: 10;
+        display: none;
+        p {
+            position: absolute;
+            top: 142px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: #fff;
+        }
+    }
+    .dialog-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.start-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -90px;
+    width: 100%;
+    background-color: #fff;
+    display: none;
+    z-index: 200;
+}
+
+.before-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    z-index: 100;
+}
+
+.main {
+    display: none;
+    overflow: hidden;
+    position: relative;
+}
+
+.page {
+    position: relative;
+    .page-bg {
+        display: block;
+        width: 100%;
+    }
+    .join-img {
+        position: absolute;
+    }
+}
+
+.page-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    overflow: hidden;
+    img {
+        position: absolute;
+    }
+    .car {
+        position: relative;
+        max-width: none;
+    }
+}
+
+.page-1 {
+    .p1-phone {
+        width: 359px;
+        top: 30px;
+        left: 85px;
+        transition: all 0.6s 2.4s;
+        animation: Rock 0.6s linear infinite alternate;
+    }
+    .p1-shout {
+        width: 49px;
+        top: 633px;
+        right: 150px;
+        transition: all 0.6s 1.4s;
+    }
+    .p1-text {
+        width: 333px;
+        top: 463px;
+        right: 26px;
+        &.active {
+            animation: BounceIn 0.6s 1.8s forwards;
+        }
+    }
+    .p1-origin1 {
+        width: 380px;
+        top: 629px;
+        left: 25px;
+        z-index: 5;
+    }
+    .p1-origin2 {
+        width: 380px;
+        top: 629px;
+        left: 25px;
+    }
+    .p1-hill1 {
+        width: 215px;
+        bottom: 20px;
+        left: 0;
+        z-index: 10;
+    }
+    .p1-hill2 {
+        width: 194px;
+        bottom: 30px;
+        right: 0;
+        z-index: 10;
+    }
+    .p1-car {
+        width: 1700px; 
+        position: absolute;
+        top: 733px;
+        left: -1020px;
+        transition: all 0.9s linear;
+        .car {
+            width: 100%;
+        }
+        &.before {
+            left: -1700px;
+        }
+        &.after {
+            left: 760px;
+        }
+    }
+}
+
+.page-2 {
+    .join-img {
+        width: 314px;
+        top: -162px;
+        right: 0;
+        z-index: 10;
+    }
+    .p2-people {
+        width: 189px;
+        top: 399px;
+        left: 47px;
+        animation: BounceIn 0.8s forwards;
+        &.before {
+            animation: none;
+        }
+        &.geton {
+            transform-origin: 266px 658px;
+        }
+    }
+    .p2-shout {
+        width: 36px;
+        top: 440px;
+        left: 236px;
+        transition: all 0.4s 1.6s linear;
+    }
+    .p2-text {
+        width: 227px;
+        top: 254px;
+        left: 178px;
+        transition: all 0.4s 1.6s linear;
+    }
+    .p2-sun {
+        width: 335px;
+        top: 66px;
+        left: 17px;
+        transition: all 0.4s 0.8s linear;
+    }
+    .p2-moon {
+        width: 319px;
+        top: 336px;
+        right: 156px;
+        transition: all 0.4s 1.2s linear;
+    }
+    .p2-guideboard {
+        width: 210px;
+        top: 467px;
+        right: 32px;
+    }
+    .p2-hill {
+        width: 232px;
+        bottom: 0px;
+        right: 0;
+        z-index: 10;
+    }
+    .p2-car {
+        width: 1372px; 
+        position: absolute;
+        bottom: 181px;
+        left: 65px;
+        transition: all 0.9s linear;
+        &.before {
+            bottom: 181px;
+            left: 750px;
+        }
+        &.after {
+            bottom: 181px;
+            left: -1372px;
+        }
+        .p2-car-people {
+            width: 60px;
+            left: 232px;
+            top: 70px;
+            display: none;
+        }
+    }
+}
+.page-3 {
+    .join-img {
+        width: 216px;
+        bottom: -99px;
+        left: 0;
+        z-index: 20;
+    }
+    .p3-table {
+        width: 422px;
+        top: 620px;
+        right: 76px;
+    }
+    .p3-people {
+        width: 248px;
+        top: 497px;
+        right: 142px;
+        animation: BounceIn 0.8s forwards;
+        &.before {
+            animation: none;
+        }
+        &.geton {
+            transform-origin: -150px 584px;
+        }
+    }
+    .p3-shout {
+        width: 41px;
+        top: 552px;
+        right: 294px;
+        transition: all 0.4s 0.8s linear;
+    }
+    .p3-text {
+        width: 343px;
+        top: 472px;
+        left: 62px;
+        transition: all 0.4s 0.8s linear;
+    }
+    .p3-guideboard {
+        width: 207px;
+        top: 704px;
+        left: 20px;
+        z-index: 10;
+    }
+    .p3-car {
+        width: 1523px; 
+        position: absolute;
+        bottom: 161px;
+        left: -839px;
+        transition: all 0.9s linear;
+        &.before {
+            bottom: 161px;
+            left: -1523px;
+        }
+        &.after {
+            bottom: 161px;
+            left: 750px;
+        }
+        .p3-car-people {
+            width: 68px;
+            right: 326px;
+            top: 37px;
+            display: none;
+        }
+    }
+}
+.page-4 {
+    .p4-people {
+        width: 222px;
+        top: 220px;
+        left: 76px;
+        animation: BounceIn 0.8s forwards;
+        &.before {
+            animation: none;
+        }
+        &.geton {
+            transform-origin: 343px 816px;
+        }
+    }
+    .p4-shout {
+        width: 34px;
+        top: 306px;
+        left: 245px;
+        transition: all 0.4s 0.8s linear;
+    }
+    .p4-text {
+        width: 232px;
+        top: 261px;
+        left: 298px;
+        transition: all 0.4s 0.8s linear;
+    }
+    .p4-pagoda {
+        width: 194px;
+        top: 89px;
+        right: 28px;
+    }
+    .p4-pagoda-signal {
+        position: absolute;
+        width: 194px;
+        height: 666px;
+        top: 89px;
+        right: 28px;
+        background-image: url(../images/p4/p4-pagoda_1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: pagoda 1.8s linear infinite;
+    }
+    .p4-guideboard {
+        width: 210px;
+        bottom: 129px;
+        right: 8px;
+        z-index: 10;
+    }
+    .p4-car {
+        width: 1372px; 
+        position: absolute;
+        bottom: 207px;
+        left: 44px;
+        transition: all 0.9s linear;
+        &.before {
+            bottom: 207px;
+            left: 760px;
+        }
+        &.after {
+            bottom: 207px;
+            left: -1372px;
+        }
+        .p4-car-people {
+            width: 68px;
+            left: 344px;
+            top: 68px;
+            display: none;
+        }
+    }
+}
+.page-5 {
+    .p5-people {
+        width: 163px;
+        top: 417px;
+        left: 375px;
+        animation: BounceIn 0.8s forwards;
+        &.before {
+            animation: none;
+        }
+        &.geton {
+            transform-origin: -180px 585px;
+        }
+    }
+    .p5-shout {
+        width: 45px;
+        top: 545px;
+        left: 305px;
+        transition: all 0.4s 0.8s linear;
+    }
+    .p5-text {
+        width: 273px;
+        top: 468px;
+        left: 75px;
+        transition: all 0.4s 0.8s linear;
+    }
+    .p5-cao {
+        width: 212px;
+        bottom: 52px;
+        left: 0px;
+        z-index: 10;
+    }
+    .p5-car {
+        width: 1523px; 
+        position: absolute;
+        bottom: 188px;
+        left: -839px;
+        transition: all 0.9s linear;
+        &.before {
+            bottom: 188px;
+            left: -1523px;
+        }
+        &.after {
+            bottom: 188px;
+            left: 750px;
+        }
+        .p5-car-people {
+            width: 64px;
+            right: 466px;
+            top: 37px;
+            display: none;
+        }
+    }
+}
+.page-6 {
+    .p6-people {
+        width: 168px;
+        top: 269px;
+        right: 59px;
+        animation: BounceIn 0.8s forwards;
+        &.before {
+            animation: none;
+        }
+        &.geton {
+            transform-origin: 36px 794px;
+        }
+    }
+    .p6-shout {
+        width: 39px;
+        top: 349px;
+        right: 190px;
+        transition: all 0.4s 0.8s linear;
+    }
+    .p6-text {
+        width: 349px;
+        top: 327px;
+        left: 130px;
+        transition: all 0.6s 0.8s linear;
+    }
+    .p6-hill {
+        width: 134px;
+        bottom: 20px;
+        right: 0;
+        z-index: 10;
+    }
+    .p6-car {
+        width: 1468px; 
+        position: absolute;
+        bottom: 167px;
+        left: 26px;
+        transition: all 0.9s linear;
+        &.before {
+            bottom: 167px;
+            left: 760px;
+        }
+        &.after {
+            bottom: 167px;
+            left: -1468px;
+        }
+        .p6-car-people {
+            width: 66px;
+            left: 506px;
+            top: 68px;
+            display: none;
+        }
+    }
+}
+.page-7 {
+    .p7-people {
+        width: 165px;
+        top: 190px;
+        left: 137px;
+        animation: BounceIn 0.8s forwards;
+        &.before {
+            animation: none;
+        }
+        &.geton {
+            transform-origin: -38px 886px;
+        }
+    }
+    .p7-shout {
+        width: 35px;
+        top: 217px;
+        left: 315px;
+        transition: all 0.4s 0.8s linear;
+    }
+    .p7-text {
+        width: 319px;
+        top: 47px;
+        left: 244px;
+        transition: all 0.4s 0.8s linear;
+    }
+    .p7-rise1,.p7-rise2 {
+        position: absolute;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.6s 1.2s linear;
+        img {
+            position: relative;
+            bottom: 0; 
+        }
+    }
+    .p7-rise1 {
+        width: 25px;
+        bottom: 1218px;
+        left: 218px;
+    }
+    .p7-rise2 {
+        width: 61px;
+        bottom: 1172px;
+        right: 142px;
+    }
+    .p7-car {
+        width: 1523px; 
+        position: absolute;
+        bottom: 155px;
+        left: -797px;
+        transition: all 0.9s linear;
+        &.before {
+            bottom: 155px;
+            left: -1523px;
+        }
+        &.after {
+            bottom: 155px;
+            left: 750px;
+        }
+        .p7-car-people {
+            width: 68px;
+            right: 593px;
+            top: 38px;
+            display: none;
+        }
+    }
+}
+
+.page-8 {
+    .page-content {
+        overflow-y: visible;
+        overflow-x: hidden;
+    }
+    .p8-clock {
+        width: 451px;
+        top: 41px;
+        left: 153px;
+        transition: all 0.4s;
+    }
+    .p8-fireworks1 {
+        width: 491px;
+        top: -74px;
+        left: -185px;
+        transition: all 0.4s 0.1s;
+    }
+    .p8-fireworks2 {
+        width: 491px;
+        top: 155px;
+        right: -120px;
+        transition: all 0.4s 0.6s;
+    }
+    .p8-shout {
+        width: 183px;
+        top: 606px;
+        left: 112px;
+        transition: all 0.4s;
+    }
+    .p8-text {
+        width: 384px;
+        top: 480px;
+        left: 21px;
+        transition: all 0.4s 0.4s linear;
+    }
+    .p8-crowd1 {
+        width: 426px;
+        top: 492px;
+        right: 0;
+        transition: all 1.2s 0.9s linear;
+        &.before {
+            right: -426px;
+        }
+    }
+    .p8-crowd2 {
+        width: 550px;
+        bottom: 184px;
+        right: 0;
+        transition: all 1.2s 0.9s linear;
+        &.before {
+            right: -550px;
+        }
+    }
+    .p8-shout2 {
+        width: 83px;
+        top: 499px;
+        right: 182px;
+        transition: all 0.4s 0.6s linear;
+    }
+    .p8-shout3 {
+        width: 78px;
+        top: 496px;
+        right: 72px;
+        transition: all 0.4s 0.6s linear;
+    }
+    .p8-car {
+        width: 1546px; 
+        position: absolute;
+        bottom: 400px;
+        left: 46px;
+        transition: all 1.2s linear;
+        &.before {
+            left: 750px;
+        }
+    }
+}
+
+.btn-box {
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 69px;
+    .btn {
+        width: 289px;
+        position: relative;
+        img {
+            width: 100%;
+            position: relative;
+        }
+        .btn-shade {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            z-index: 2;
+        }
+    }
+}
+.remind {
+    position: absolute;
+    bottom: 36px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #fff;
+    .remind-shade {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+    }
+}
+
+.error-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: #fff;
+    .error-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-80%);
+        text-align: center;
+        img {
+            margin: 0 auto;
+        }
+        p {
+            font-size: 30px;
+            color: #666;
+            line-height: 42px;
+            padding-top: 40px;
+        }
+    }
+}
+
+
+@media (max-device-width: 321px) and (max-device-height: 480px) {
+    .dialog-box {
+        padding: 18px 20px 0;
+        .dialog {
+            margin-bottom: 10px;
+            .text {
+                padding: 8px 20px;
+            }
+            .hand {
+                top: 110px;
+                right: 60px;
+                p {
+                    top: 136px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,892 @@
+@charset "UTF-8";
+/*底部轻轨*/
+@-webkit-keyframes lightRail {
+  0% {
+    left: -311px;
+    bottom: 546px; }
+  100% {
+    left: 750px;
+    bottom: -68px; } }
+@keyframes lightRail {
+  0% {
+    left: -311px;
+    bottom: 546px; }
+  100% {
+    left: 750px;
+    bottom: -68px; } }
+/*寄语展示飞行动画*/
+@-webkit-keyframes seeWordFly {
+  0% {
+    top: 460px; }
+  100% {
+    top: 468px; } }
+@keyframes seeWordFly {
+  0% {
+    top: 460px; }
+  100% {
+    top: 468px; } }
+/*云展馆*/
+@-webkit-keyframes areaTitle {
+  0% {
+    bottom: 16px; }
+  100% {
+    bottom: 26px; } }
+@keyframes areaTitle {
+  0% {
+    bottom: 16px; }
+  100% {
+    bottom: 26px; } }
+/*page2下的悬浮形状*/
+@-webkit-keyframes shape {
+  0% {
+    top: 232px; }
+  100% {
+    top: 218px; } }
+@keyframes shape {
+  0% {
+    top: 232px; }
+  100% {
+    top: 218px; } }
+/*火柴人和飞机对话动画*/
+@-webkit-keyframes TextShow {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3); }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+@keyframes TextShow {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3); }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+/*飞机飞行动画*/
+@-webkit-keyframes aircraft {
+  0% {
+    top: -215px;
+    right: 750px; }
+  80% {
+    top: 688px;
+    right: -225px; }
+  100% {
+    top: 688px;
+    right: -225px; } }
+@keyframes aircraft {
+  0% {
+    top: -215px;
+    right: 750px; }
+  80% {
+    top: 688px;
+    right: -225px; }
+  100% {
+    top: 688px;
+    right: -225px; } }
+/*火柴人1动画*/
+@-webkit-keyframes People1 {
+  0% {
+    left: 266px;
+    top: 528px;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  49.9% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  50% {
+    left: 562px;
+    top: 488px;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1); }
+  99.9% {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1); }
+  100% {
+    left: 266px;
+    top: 528px;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); } }
+@keyframes People1 {
+  0% {
+    left: 266px;
+    top: 528px;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  49.9% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  50% {
+    left: 562px;
+    top: 488px;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1); }
+  99.9% {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1); }
+  100% {
+    left: 266px;
+    top: 528px;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); } }
+/*火柴人4动画*/
+@-webkit-keyframes People4 {
+  0% {
+    left: 750px;
+    bottom: 204px; }
+  70% {
+    left: 208px;
+    bottom: 164px; }
+  100% {
+    left: -22px;
+    bottom: 164px; } }
+@keyframes People4 {
+  0% {
+    left: 750px;
+    bottom: 204px; }
+  70% {
+    left: 208px;
+    bottom: 164px; }
+  100% {
+    left: -22px;
+    bottom: 164px; } }
+/*火柴人5动画*/
+@-webkit-keyframes People5 {
+  0% {
+    left: 750px;
+    bottom: 26px; }
+  100% {
+    left: -16px;
+    bottom: 380px; } }
+@keyframes People5 {
+  0% {
+    left: 750px;
+    bottom: 26px; }
+  100% {
+    left: -16px;
+    bottom: 380px; } }
+/*火柴人5-2动画*/
+@-webkit-keyframes People5-2 {
+  0% {
+    right: -19px;
+    bottom: 282px; }
+  100% {
+    right: 750px;
+    bottom: 145px; } }
+@keyframes People5-2 {
+  0% {
+    right: -19px;
+    bottom: 282px; }
+  100% {
+    right: 750px;
+    bottom: 145px; } }
+/*火柴人6动画*/
+@-webkit-keyframes People6 {
+  0% {
+    right: -28px;
+    bottom: 50px; }
+  100% {
+    right: 750px;
+    bottom: -120px; } }
+@keyframes People6 {
+  0% {
+    right: -28px;
+    bottom: 50px; }
+  100% {
+    right: 750px;
+    bottom: -120px; } }
+/*火柴人8动画*/
+@-webkit-keyframes People8 {
+  0% {
+    right: -28px;
+    top: 198px;
+    display: block; }
+  99.9% {
+    right: 616px;
+    top: 332px;
+    display: block; }
+  100% {
+    right: 616px;
+    top: 332px;
+    display: none; } }
+@keyframes People8 {
+  0% {
+    right: -28px;
+    top: 198px;
+    display: block; }
+  99.9% {
+    right: 616px;
+    top: 332px;
+    display: block; }
+  100% {
+    right: 616px;
+    top: 332px;
+    display: none; } }
+/*火柴人9动画*/
+@-webkit-keyframes People9 {
+  0% {
+    right: -34px;
+    top: 46px;
+    display: block; }
+  99.9% {
+    right: 616px;
+    top: 332px;
+    display: block; }
+  100% {
+    right: 616px;
+    top: 332px;
+    display: none; } }
+@keyframes People9 {
+  0% {
+    right: -34px;
+    top: 46px;
+    display: block; }
+  99.9% {
+    right: 616px;
+    top: 332px;
+    display: block; }
+  100% {
+    right: 616px;
+    top: 332px;
+    display: none; } }
+/*火柴人10动画*/
+@-webkit-keyframes People10 {
+  0% {
+    left: 23px;
+    top: 292px;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  20% {
+    left: 83px;
+    top: 363px; }
+  49.9% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  50% {
+    left: 215px;
+    top: 428px;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1); }
+  70% {
+    left: 83px;
+    top: 363px; }
+  99.9% {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1); }
+  100% {
+    left: 23px;
+    top: 292px;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); } }
+@keyframes People10 {
+  0% {
+    left: 23px;
+    top: 292px;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  20% {
+    left: 83px;
+    top: 363px; }
+  49.9% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  50% {
+    left: 215px;
+    top: 428px;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1); }
+  70% {
+    left: 83px;
+    top: 363px; }
+  99.9% {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1); }
+  100% {
+    left: 23px;
+    top: 292px;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); } }
+/*火柴人11动画*/
+@-webkit-keyframes People11 {
+  0% {
+    left: 271px;
+    top: 413px;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  39.9% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1; }
+  40% {
+    left: 131px;
+    top: 346px;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+    opacity: 0; }
+  59.9% {
+    opacity: 0; }
+  60% {
+    left: 131px;
+    top: 346px;
+    opacity: 1; }
+  99.9% {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1); }
+  100% {
+    left: 271px;
+    top: 413px;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); } }
+@keyframes People11 {
+  0% {
+    left: 271px;
+    top: 413px;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  39.9% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1; }
+  40% {
+    left: 131px;
+    top: 346px;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+    opacity: 0; }
+  59.9% {
+    opacity: 0; }
+  60% {
+    left: 131px;
+    top: 346px;
+    opacity: 1; }
+  99.9% {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1); }
+  100% {
+    left: 271px;
+    top: 413px;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); } }
+/*火柴人13动画*/
+@-webkit-keyframes People13 {
+  0% {
+    left: -21px;
+    bottom: 188px; }
+  13% {
+    left: 102px;
+    bottom: 303px; }
+  19% {
+    left: 148px;
+    bottom: 265px; }
+  100% {
+    left: 750px;
+    bottom: 610px; } }
+@keyframes People13 {
+  0% {
+    left: -21px;
+    bottom: 188px; }
+  13% {
+    left: 102px;
+    bottom: 303px; }
+  19% {
+    left: 148px;
+    bottom: 265px; }
+  100% {
+    left: 750px;
+    bottom: 610px; } }
+/*火柴人12和15动画*/
+@-webkit-keyframes People1215 {
+  0% {
+    left: -22px;
+    bottom: -44px; }
+  50% {
+    left: 460px;
+    bottom: 196px; }
+  100% {
+    left: 750px;
+    bottom: 548px; } }
+@keyframes People1215 {
+  0% {
+    left: -22px;
+    bottom: -44px; }
+  50% {
+    left: 460px;
+    bottom: 196px; }
+  100% {
+    left: 750px;
+    bottom: 548px; } }
+/*火柴人20动画*/
+@-webkit-keyframes People20 {
+  0% {
+    left: -31px;
+    top: 216px; }
+  100% {
+    left: 750px;
+    top: 712px; } }
+@keyframes People20 {
+  0% {
+    left: -31px;
+    top: 216px; }
+  100% {
+    left: 750px;
+    top: 712px; } }
+/*火柴人23动画*/
+@-webkit-keyframes People23 {
+  0% {
+    right: -28px;
+    bottom: 304px;
+    z-index: 9; }
+  59.9% {
+    z-index: 9; }
+  60% {
+    right: 218px;
+    bottom: 80px;
+    z-index: 20; }
+  100% {
+    right: 430px;
+    bottom: -91px; } }
+@keyframes People23 {
+  0% {
+    right: -28px;
+    bottom: 304px;
+    z-index: 9; }
+  59.9% {
+    z-index: 9; }
+  60% {
+    right: 218px;
+    bottom: 80px;
+    z-index: 20; }
+  100% {
+    right: 430px;
+    bottom: -91px; } }
+html, body {
+  background-color: #f0ecdf; }
+
+.wrap {
+  max-width: 750px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.page {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+  .page .page-bg {
+    width: 100%; }
+  .page .page-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+.btn {
+  position: absolute;
+  z-index: 40; }
+  .btn img {
+    width: 100%; }
+
+.city {
+  position: absolute;
+  z-index: 10; }
+
+.see-word, .area-title, .shape, .shape-shadow {
+  z-index: 30; }
+
+.people {
+  position: absolute;
+  z-index: 20;
+  -webkit-animation-timing-function: linear !important;
+          animation-timing-function: linear !important;
+  -webkit-animation-iteration-count: infinite !important;
+          animation-iteration-count: infinite !important; }
+
+video::-webkit-media-controls {
+  display: none !important; }
+
+#page1 #video, #page1 .video-poster {
+  width: 398px;
+  height: 220px;
+  background-color: #fff;
+  position: absolute;
+  top: 213px;
+  left: 188px; }
+#page1 #video {
+  display: none; }
+#page1 .video-poster {
+  z-index: 100; }
+#page1 .btn-1 {
+  width: 203px;
+  left: 38px;
+  top: 453px; }
+#page1 .btn-2 {
+  width: 229px;
+  top: 515px;
+  right: 51px; }
+#page1 .btn-3 {
+  width: 228px;
+  bottom: 233px;
+  right: 130px; }
+#page1 .see-word-fly {
+  width: 170px;
+  position: absolute;
+  top: 460px;
+  left: 19px;
+  z-index: 31;
+  -webkit-animation: seeWordFly 1s infinite alternate;
+          animation: seeWordFly 1s infinite alternate; }
+#page1 .see-word {
+  position: absolute;
+  width: 601px;
+  height: 62px;
+  background: url(../images/see-word-bg.png) no-repeat center/cover;
+  left: 113px;
+  bottom: 401px; }
+  #page1 .see-word .see-word-box {
+    width: 400px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 80px;
+    overflow: hidden; }
+  #page1 .see-word ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    #page1 .see-word ul li {
+      -webkit-box-flex: 0;
+          -ms-flex: none;
+              flex: none;
+      font-size: 28px;
+      line-height: 40px;
+      margin-right: 40px; }
+#page1 .p1 {
+  width: 29px;
+  left: 266px;
+  top: 528px;
+  z-index: 10;
+  -webkit-animation: People1 40s;
+          animation: People1 40s; }
+#page1 .p2 {
+  width: 20px;
+  right: 316px;
+  top: 519px; }
+#page1 .p3 {
+  width: 48px;
+  right: 218px;
+  bottom: -37px; }
+#page1 .p4 {
+  width: 22px;
+  left: 208px;
+  bottom: 197px;
+  z-index: 9;
+  -webkit-animation: People4 48s;
+          animation: People4 48s; }
+#page1 .p5 {
+  width: 16px;
+  right: -16px;
+  -webkit-animation: People5 80s;
+          animation: People5 80s; }
+#page1 .p5-2 {
+  width: 26px;
+  right: -26px;
+  bottom: 214px;
+  z-index: 9;
+  -webkit-animation: People5-2 58s 5s;
+          animation: People5-2 58s 5s; }
+#page1 .p6 {
+  width: 28px;
+  right: -28px;
+  bottom: 100px;
+  -webkit-animation: People6 60s 5s;
+          animation: People6 60s 5s;
+  z-index: 9; }
+#page1 .area-img-1 {
+  width: 129px;
+  position: absolute;
+  top: 545px;
+  right: 26px;
+  z-index: 10; }
+#page1 .area-title, #page1 .area-title-shadow {
+  width: 254px;
+  position: absolute;
+  bottom: 14px;
+  left: 160px; }
+#page1 .area-title-shadow {
+  opacity: 0.6; }
+#page1 .area-title {
+  -webkit-animation: areaTitle 1.2s infinite alternate linear;
+          animation: areaTitle 1.2s infinite alternate linear; }
+#page1 .city {
+  top: 576px;
+  left: 0; }
+
+#page2 .p7-box {
+  position: absolute;
+  top: 202px;
+  right: 80px;
+  z-index: 21; }
+  #page2 .p7-box .p7 {
+    position: relative;
+    width: 72px; }
+  #page2 .p7-box .text {
+    width: 112px;
+    position: absolute;
+    top: -122px;
+    right: -35px;
+    -webkit-transform-origin: 68px 137px;
+            transform-origin: 68px 137px;
+    -webkit-animation: TextShow 3s infinite;
+            animation: TextShow 3s infinite; }
+#page2 .btn-4 {
+  width: 283px;
+  top: 280px;
+  right: 90px; }
+#page2 .btn-5 {
+  width: 283px;
+  bottom: 115px;
+  right: 222px; }
+#page2 .shape {
+  width: 152px;
+  position: absolute;
+  top: 228px;
+  left: 268px;
+  -webkit-animation: shape 2s infinite alternate;
+          animation: shape 2s infinite alternate; }
+#page2 .shape-shadow {
+  width: 126px;
+  position: absolute;
+  top: 405px;
+  left: 270px; }
+#page2 .p8 {
+  width: 28px;
+  right: 227px;
+  top: 207px;
+  z-index: 22;
+  -webkit-animation: People8 58s 3s;
+          animation: People8 58s 3s; }
+#page2 .p9 {
+  width: 34px;
+  right: 491px;
+  top: 277px;
+  -webkit-animation: People9 52s;
+          animation: People9 52s; }
+#page2 .p10 {
+  width: 15px;
+  left: 23px;
+  top: 294px;
+  -webkit-animation: People10 48s;
+          animation: People10 48s; }
+#page2 .p11 {
+  width: 16px;
+  left: 131px;
+  top: 346px;
+  -webkit-animation: People11 43s;
+          animation: People11 43s; }
+#page2 .p12 {
+  width: 22px;
+  left: 582px;
+  bottom: 367px;
+  -webkit-animation: People1215 63s;
+          animation: People1215 63s; }
+#page2 .p13 {
+  width: 21px;
+  left: 43px;
+  bottom: 248px;
+  z-index: 31;
+  -webkit-animation: People13 62s;
+          animation: People13 62s; }
+#page2 .p14 {
+  width: 71px;
+  left: 343px;
+  bottom: 228px; }
+#page2 .p15 {
+  width: 20px;
+  left: -22px;
+  bottom: -44px;
+  -webkit-animation: People1215 63s 15s;
+          animation: People1215 63s 15s; }
+#page2 .p16 {
+  width: 19px;
+  right: 333px;
+  bottom: -59px; }
+#page2 .p17 {
+  width: 290px;
+  right: 0;
+  bottom: -113px; }
+#page2 .city {
+  top: 381px;
+  right: 0; }
+
+#page3 .city {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+#page3 .light-rail {
+  width: 311px;
+  position: absolute;
+  z-index: 30;
+  -webkit-animation: lightRail 4.8s linear infinite;
+          animation: lightRail 4.8s linear infinite; }
+#page3 .btn-6 {
+  width: 283px;
+  top: 287px;
+  left: 245px; }
+#page3 .aircraft {
+  position: absolute;
+  /*top: 441px;
+  right: 80px;*/
+  top: -215px;
+  right: 750px;
+  z-index: 30; }
+  #page3 .aircraft img {
+    width: 225px; }
+  #page3 .aircraft .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform-origin: 130px 100px;
+            transform-origin: 130px 100px;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: all 1s;
+    transition: all 1s; }
+    #page3 .aircraft .text.show {
+      -webkit-transform: scale(1);
+              transform: scale(1); }
+#page3 .p18-box {
+  position: absolute;
+  top: 164px;
+  left: 109px; }
+  #page3 .p18-box .p18 {
+    position: relative;
+    width: 28px; }
+  #page3 .p18-box .text {
+    width: 138px;
+    position: absolute;
+    top: -164px;
+    left: -31px;
+    -webkit-transform-origin: 40px 170px;
+            transform-origin: 40px 170px;
+    -webkit-animation: TextShow 2.7s infinite;
+            animation: TextShow 2.7s infinite; }
+#page3 .p19 {
+  width: 40px;
+  left: 132px;
+  top: 182px; }
+#page3 .p20 {
+  width: 31px;
+  left: 75px;
+  top: 264px;
+  -webkit-animation: People20 60s;
+          animation: People20 60s;
+  z-index: 9; }
+#page3 .p21 {
+  width: 31px;
+  right: 121px;
+  top: 350px; }
+#page3 .p22 {
+  width: 112px;
+  right: 20px;
+  top: 215px; }
+#page3 .p23 {
+  width: 28px;
+  right: 42px;
+  bottom: 243px;
+  z-index: 9;
+  -webkit-animation: People23 32s;
+          animation: People23 32s; }
+#page3 .p24 {
+  width: 36px;
+  left: 250px;
+  bottom: 50px; }
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: none; }
+  .popup .close {
+    position: absolute; }
+    .popup .close img {
+      width: 45px; }
+
+.schedule-box .schedule-main {
+  width: 537px;
+  height: 832px;
+  padding: 242px 0 200px;
+  text-align: center;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: url(../images/schedule-bg.png) no-repeat center/cover; }
+  .schedule-box .schedule-main .close {
+    top: 59px;
+    right: 0; }
+  .schedule-box .schedule-main h3 {
+    font-size: 32px;
+    color: #032d71;
+    line-height: 1; }
+  .schedule-box .schedule-main p {
+    font-size: 27px;
+    line-height: 40px;
+    color: #525252;
+    padding: 7px 0 38px; }
+    .schedule-box .schedule-main p span {
+      display: block;
+      font-size: 25px; }
+
+.send-word-box .send-word-main {
+  width: 598px;
+  height: 360px;
+  padding: 96px 82px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+  background: url(../images/send-word-bg.png) no-repeat center/contain; }
+  .send-word-box .send-word-main .close {
+    bottom: -70px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .send-word-box .send-word-main .send {
+    position: absolute;
+    bottom: 50px;
+    right: 44px; }
+    .send-word-box .send-word-main .send img {
+      width: 147px; }
+  .send-word-box .send-word-main textarea {
+    width: 100%;
+    height: 168px;
+    font-size: 26px;
+    color: #666;
+    line-height: 40px; }

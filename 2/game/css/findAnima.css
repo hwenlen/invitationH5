@@ -1,0 +1,99 @@
+.findC .page1 .titles{
+    animation: titles 1s ease-in forwards;
+}
+.findC .page1 .textBg{
+    animation: textBg 1s linear infinite;
+    animation-delay: 1.2s;
+}
+@keyframes titles{
+    0%{
+        transform: scale(7);
+        opacity: 0.2;
+    }
+    50%{
+        transform: scale(0.7);
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes textBg{
+    0%{
+        transform: scale(1.01);
+        opacity: 0.9;
+    }
+    5%{
+        transform: scale(1.02);
+        opacity: 0.8;
+    }
+    10%{
+        transform: scale(1.03);
+        opacity: 0.7;
+    }
+    15%{
+        transform: scale(1.04);
+        opacity: 0.6;
+    }
+    20%{
+        transform: scale(1.05);
+        opacity: 0.5;
+    }
+    25%{
+        transform: scale(1.06);
+        opacity: 0.4;
+    }
+    30%{
+        transform: scale(1.07);
+        opacity: 0.3;
+    }
+
+}
+.findC .glass{
+    animation:glass 5s linear infinite;
+}
+@keyframes glass{
+    0%{
+        right:0;
+        top:35%;
+    }
+    10%{
+        right:-2rem;
+        top:50%;
+    }
+    20%{
+        right:-1rem;
+        top:55%;
+        transform: scale(1);
+    }
+    30%{
+        right:-1rem;
+        top:55%;
+        transform: scale(1.2);
+        
+    }
+    40%{
+        right:-1rem;
+        top:55%;
+        transform: scale(1);
+    }
+    60%{
+        right:0;
+        top:35%;
+    }
+}
+.showBig{
+    animation: showBig 1s ease-in forwards;
+}
+@keyframes showBig{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

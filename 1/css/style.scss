@@ -1,0 +1,528 @@
+@import 'animate.scss';
+/*以上是动画设置*/
+html,body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Microsoft YaHei','Tahoma','Arial','Helvetica','sans-serif';
+}
+
+$anitime: 0.8s;
+
+.animated {
+    opacity: 0;
+}
+
+.down {
+    width: 1.02rem;
+    position: absolute;
+    bottom: 0.48rem;
+    left: 50%;
+    margin-left: -0.51rem;
+    animation: ArrowSlow 1s ease-in-out infinite;
+}
+
+
+.back {
+    width: 0.6rem;
+    position: fixed;
+    top: 0.2rem;
+    right: 0.36rem;
+    z-index: 200;
+    display: none;
+}
+
+.audio-btn {
+    position: absolute;
+    top: 0.3rem;
+    right: 0.3rem;
+    z-index: 200;
+    &.have-back {
+        top: 1rem;
+    }
+    img {
+        width: 0.7rem;
+        display: none;
+    }
+}
+
+/*弹窗*/
+.dialog-wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 300;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    .dialog-content {
+        width: 4.5rem;
+        min-height: 3.4rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: #fff;
+        border-radius: 0.09rem;
+        padding: 0.62rem 0 0.4rem;
+        font-size: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dialog-icon {
+        width: 0.85rem;
+    }
+    .dialog-text {
+        max-width: 3.4rem;
+        font-size: 0.3rem;
+        color: #10347D;
+        line-height: 0.36rem;
+        text-align: center;
+        padding: 0.29rem 0 0.32rem;
+    }
+    .dialog-btn {
+        width: 1.2rem;
+        border-radius: 0.09rem;
+        box-shadow: 0 0.03rem 0.1rem rgba(0,0,0,0.2);
+    }
+}
+/*弹窗 end*/
+
+/*loading*/
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 400;
+    background-color: #000;
+    .loading-content {
+        width: 1.9rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -1rem 0 0 -0.85rem;
+        background-color: #000000;
+        .rolling {
+            position: absolute;
+            max-width: none;
+            width: 2.08rem;
+            top: -0.08rem;
+            left: -0.09rem;
+            animation: Rotate 4s linear infinite;
+        }
+    }
+}
+
+#fra {
+    display: none;
+}
+
+.wrap-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 10;
+    max-width: 7.5rem;
+    margin: 0 auto;
+    background-color: #001443;
+    overflow: hidden;
+}
+#bgImg,#roundAnimate,#bgShade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    overflow: hidden;
+    transform-origin: center top;
+    transform: scale(1.86);
+    transition: transform 0.6s;
+}
+
+#roundAnimate {
+    height: 6rem;
+    z-index: 30 !important;
+    mix-blend-mode: screen;
+    .round {
+        position: absolute;
+        border-radius: 100%;
+        border: none;
+    }
+    #roundWrapTop {
+        width: 36%;
+        height: 0.40rem;
+        margin: 0 auto;
+        position: relative;
+    }
+    #roundWrapBottom {
+        width: 100%;
+        height: 1.8rem;
+        position: absolute;
+        top: 1.02rem;
+        left: 0;
+    }
+}
+#bgImg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 7.5rem;
+    height: 2.14rem;
+    animation: aniLight 4.8s linear infinite;
+}
+
+.wrap {
+    position: relative;
+    height: 100%;
+    z-index: 100;
+    max-width: 7.5rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.header {
+    position: absolute;
+    top: 0.55rem;
+    left: 0.49rem;
+    z-index: 100;
+    display: none;
+    .logo {
+        display: block;
+        width: 2.31rem;
+    }
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 100;
+}
+.page-conteiner {
+    height: 100%;
+}
+
+.swiper-wrapper {
+//    transition-timing-function: cubic-bezier(0.1, 0.2, 0.9, 0.1);
+}
+
+.swiper-slide {
+    overflow: hidden;
+}
+
+.page-head {
+    .title {
+        width: 6.18rem;
+        margin: 0 auto 0.3rem;
+    }
+    .sub {
+        width: 5.06rem;
+        margin: 0 auto;
+    }
+}
+
+
+.index-slide {
+    .page-main {
+        position: absolute;
+        top: 4.82rem;
+        left: 0;
+        right: 0;
+    }
+    .logo {
+        width: 2.88rem;
+        margin: 0 auto 0.68rem;
+    }
+    .text {
+        position: relative;
+        text-align: center;
+        font-size: 0;
+        >img {
+            width: 5.44rem;
+            position: relative;
+            z-index: 10;
+            margin: 0 auto;
+        }
+        .light1,.light2 {
+            position: absolute;
+        }
+        .light1 {
+            width: 2.75rem;
+            top: -1.1rem;
+            left: 0rem;
+            animation: Twinkle 4s 0.2s linear infinite;
+        }
+        .light2 {
+            width: 3.36rem;
+            top: -0.52rem;
+            right: 0rem;
+            animation: Twinkle 4.2s 0.5s linear infinite;
+        }
+    }
+    .title {
+        position: relative;
+        width: 2.62rem;
+        margin: 0.9rem auto 0;
+        .title-round {
+            width: 2.62rem;
+            animation: Rotate 3s linear infinite;
+        }
+        .title-text {
+            width: 2.08rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+}
+
+.video-slide {
+    .page-main {
+        padding-top: 2.62rem;
+    }
+    .video-wrap {
+        width: 6.30rem;
+        padding-left: 0.24rem;
+        position: relative;
+        margin: 1.06rem auto 0;
+        .video-decorate {
+            width: 0.62rem;
+            position: absolute;
+            top: -0.2rem;
+            left: -0.18rem;
+            z-index: 10;
+        }
+        .video-box {
+            width: 100%;
+            height: 3.72rem;
+            border-radius: 0.09rem;
+            overflow: hidden;
+            position: relative;
+            video {
+                width: 100%;
+                height: 100%;
+//                object-fit: cover;
+            }
+            .video-poster {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.invitation-slide {
+    .page-main {
+        padding-top: 1.18rem;
+    }
+    .title {
+        width: 4.4rem;
+        margin: 0 auto 0.28rem;
+    }
+    .invit-container {
+        width: 6.74rem;
+        height: 60.6vh;
+        .swiper-scrollbar {
+            display: none;
+        }
+        .swiper-slide {
+            height: auto;
+        }
+    }
+    .text {
+        padding-top: 0.12rem;
+    }
+    .signature {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 0.57rem;
+        padding-top: 0.6rem;
+        img {
+            width: 1.97rem;
+            height: 1.42rem;
+        }
+    }
+}
+.register-slide {
+    .page-main {
+        padding-top: 2.62rem;
+        position: relative;
+    }
+    .register {
+        padding-top: 0.8rem;
+    }
+    .form-item {
+        width: 4.66rem;
+        height: 1.03rem;
+        padding: 0.05rem 0.08rem 0.1rem;
+        background: url(../images/form-border.png) no-repeat center;
+        background-size: contain;
+        margin: 0 auto;
+        margin-top: 0.12rem;
+        .item-content {
+            height: 100%;
+            position: relative;
+            input {
+                width: 100%;
+                height: 100%;
+                padding: 0 0.2rem;
+                text-align: center;
+                font-size: 0.3rem;
+                color: #fff;
+                text-shadow: 0 0.03rem 0.06rem #fff;
+            }
+            .placeholder {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 0.43rem;
+            }
+        }
+        .adorn {
+            width: 0.62rem;
+            position: absolute;
+            top: -0.2rem;
+            right: -0.18rem;
+        }
+    }
+    .btn {
+        width: 4.5rem;
+        margin: 0.52rem auto 0;
+        border-radius: 0.09rem;
+        box-shadow: 0 0.03rem 0.1rem #10347D;
+    }
+}
+
+.address-slide {
+    .page-main {
+        padding-top: 2.62rem;
+    }
+    .text {
+        width: 5.59rem;
+        margin: 0.74rem 0 0 0.95rem;
+    }
+    .map {
+        width: 5.63rem;
+        height: 3.15rem;
+        border-radius: 0.17rem;
+        margin: 0.48rem auto 0;
+        background-color: #fff;
+        box-shadow: 0.07rem 0.08rem 0.06rem rgba(0,0,0,0.2);
+    }
+}
+
+.meeting-slide {
+    .page-main {
+        padding-top: 1.32rem;
+    }
+    .table-title {
+        width: 7.2rem;
+        margin: 0.5rem auto 0;
+    }
+    .table-body {
+        height: 60vh;
+        background-color: rgba(255,255,255,0.3);
+        width: 7.02rem;
+        padding: 0 0.2rem;
+        margin: 0 auto;
+        overflow: hidden;
+        .table-th {
+            padding: 0.14rem 0 0.2rem;
+            font-size: 0;
+        }
+        .table-td {
+            position: relative;
+            height: 0.9rem;
+            overflow: hidden;
+            margin-bottom: 0.14rem;
+            &.open {
+                height: auto;
+                .arrow {
+                    opacity: 0;
+                }
+            }
+            .arrow {
+                position: absolute;
+                width: 0.5rem;
+                bottom: 0;
+                left: 50%;
+                margin-left: -0.25rem;
+                animation: ArrowSlow2 0.8s ease-in-out infinite;
+            }
+        }
+    }
+}
+
+.code-slide {
+    .page-main {
+        padding-top: 2.62rem;
+    }
+    .qr-code {
+        width: 4.54rem;
+        margin: 0.88rem auto 0;
+        position: relative;
+    }
+}
+
+@media screen and (max-height: 640px){
+    .meeting-slide {
+        .page-main {
+            padding-top: 1.0rem;
+        }
+        .page-head {
+            .title {
+                margin: 0 auto 0.2rem;
+            }
+        }
+        .table-title {
+            margin: 0.3rem auto 0;
+        }
+        .table-body {
+            .table-td {
+                margin-bottom: 0.08rem;
+            }
+        }
+    }
+}
+@media screen and (max-height: 690px) and (min-width: 400px){
+    .meeting-slide {
+        .page-main {
+            padding-top: 1.0rem;
+        }
+        .page-head {
+            .title {
+                margin: 0 auto 0.2rem;
+            }
+        }
+        .table-title {
+            margin: 0.3rem auto 0;
+        }
+        .table-body {
+            .table-td {
+                margin-bottom: 0.08rem;
+            }
+        }
+    }
+}
+/*弹出软键盘的时候让箭头消失*/
+@media screen and (max-height: 380px){
+    .down {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
